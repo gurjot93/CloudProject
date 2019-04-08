@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+/* Login Page CSS Begins */
+.login-body{
+  /*background: url(img/dalhousieUniversityImage.jpeg) no-repeat center center fixed;*/
+  background-size: cover;
+  background-color: #5A5656; 
+  opacity: 0.9;
+  filter: alpha(opacity=90); /* For IE8 and earlier */
+}
+
+.main-section{
+  margin: 0 auto;
+  margin-top: 130px;
+  padding:0;
+}
+
+.modal-content{
+  background-color: 	#000000;
+  opacity: .75;
+  padding: 0 18px;
+  box-shadow: 0px 0px 10px #3f3f3f;
+}
+
+.dalLogo{
+  margin-top: -50px;
+  border-radius:10px;
+}
+
+.form-group{
+  margin-bottom: 25px;
+}
+
+.form-group input{
+  height: 42px;
+  border-radius:5px;
+  font-size:18px;
+}
+
+.login-button{
+  width: 40%;
+  margin: 5px 0 25px;
+  background-color:#27c2a5;
+  color:#fff;
+  font-size:16px;
+  padding: 7px 14px;
+  border-radius: 5px;
+  border-bottom: 4px solid #219882;
+}
+
+.login-button:hover{
+  background-color: #563d7c!important;
+  border-radius: 5px;
+  border-bottom: 4px solid #563d7c;
+}
+
+.svg-inline--fa{
+  font-size: 20px;
+  margin-right: 2px;
+}
+/* Login Page CSS Ends */
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/dalhousieUniversityImage.jpeg');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+input{
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.standouttext{
+  color: white;
+}
+
+h1{
+  color: white;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+

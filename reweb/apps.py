@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class RewebConfig(AppConfig):
+class RealEstateConfig(AppConfig):
     name = 'reweb'

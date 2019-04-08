@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class EmpwebConfig(AppConfig):
+class EmpWebConfig(AppConfig):
     name = 'empweb'
