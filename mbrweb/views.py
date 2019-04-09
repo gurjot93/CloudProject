@@ -8,27 +8,32 @@ def home(request):
 
 def register(request):
 	page='register.html'
+	return render(request,page)
+
+def confirmation(request):
 	if request.method == "POST":
-		print('No User found;creating a new user')
+		username=request.POST.get('username','')
+		password= request.POST.get('password','')
 		name= request.POST.get('name','')
 		address=request.POST.get('address','')
 		number=request.POST.get('number','')
 		emp_details=request.POST.get('emp_details','')
-		status=request.POST.get('status','')
 		mbrUser= MbrDetails(
+			username=username,
+			password=password,
 			name= name,
    			address = address,
    			number =number,
-   			emp_details = emp_details,
-			status=status)
+   			emp_details = emp_details,)
 		print("Saving New User into MbrDetails DB")
-		mbrUser.save()
-		mbrUsers =MbrDetails.objects.all()
-		print(mbrUsers)
 		print(request.POST)
-	return render(request,page)
-
-def confirmation(request):
+		mbrUser.save()
+		##mbrUsers =MbrDetails.objects.all()
+		##print(mbrUsers)
+		##print(request.POST)
+	##mbrUser = MbrDetails.objects.get(username=username)
+	##print(mbrUser.mortID)
+	##context ={'mbrUser':mbrUser}
 	return render(request,'mbr_confirmation.html')
 
 def formdetails(request):
