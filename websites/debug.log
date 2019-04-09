@@ -2285,3 +2285,193 @@ RuntimeError: You called this URL via POST, but the URL doesn't end in a slash a
 "GET /static/img/buisnessman.png HTTP/1.1" 200 25975
 "GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
 "GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.005) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET / HTTP/1.1" 200 1944
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/img/mbr.jpg HTTP/1.1" 200 33079
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+"POST /register/ HTTP/1.1" 200 2865
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/mbr.jpg HTTP/1.1" 200 33079
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+CREATE TABLE "mbrweb_mbrdetails" ("id" serial NOT NULL PRIMARY KEY, "name" varchar(100) NOT NULL, "address" varchar(100) NOT NULL, "number" varchar(100) NOT NULL, "emp_details" varchar(100) NOT NULL, "status" varchar(100) NOT NULL); (params None)
+(0.033) CREATE TABLE "mbrweb_mbrdetails" ("id" serial NOT NULL PRIMARY KEY, "name" varchar(100) NOT NULL, "address" varchar(100) NOT NULL, "number" varchar(100) NOT NULL, "emp_details" varchar(100) NOT NULL, "status" varchar(100) NOT NULL); args=None
+(0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('mbrweb', '0001_initial', '2019-04-09T15:34:25.161514+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('mbrweb', '0001_initial', datetime.datetime(2019, 4, 9, 15, 34, 25, 161514, tzinfo=<UTC>))
+(0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry'); args=('admin', 'logentry')
+(0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+(0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission'); args=('auth', 'permission')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group'); args=('auth', 'group')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user'); args=('auth', 'user')
+(0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype'); args=('contenttypes', 'contenttype')
+(0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session'); args=('sessions', 'session')
+(0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'empweb' AND "django_content_type"."model" = 'employee'); args=('empweb', 'employee')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'empweb'; args=('empweb',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'mbrweb' AND "django_content_type"."model" = 'mbrdetails'); args=('mbrweb', 'mbrdetails')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'mbrweb' AND "django_content_type"."model" = 'mbrdetails'); args=('mbrweb', 'mbrdetails')
+(0.001) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('mbrweb', 'mbrdetails') RETURNING "django_content_type"."id"; args=('mbrweb', 'mbrdetails')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (9) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(9,)
+(0.002) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") VALUES ('Can add mbr details', 9, 'add_mbrdetails'), ('Can change mbr details', 9, 'change_mbrdetails'), ('Can delete mbr details', 9, 'delete_mbrdetails'), ('Can view mbr details', 9, 'view_mbrdetails') RETURNING "auth_permission"."id"; args=('Can add mbr details', 9, 'add_mbrdetails', 'Can change mbr details', 9, 'change_mbrdetails', 'Can delete mbr details', 9, 'delete_mbrdetails', 'Can view mbr details', 9, 'view_mbrdetails')
+(0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'mbrweb'; args=('mbrweb',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'reweb' AND "django_content_type"."model" = 'realestate'); args=('reweb', 'realestate')
+(0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (8) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(8,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'reweb'; args=('reweb',)
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.004) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) INSERT INTO "mbrweb_mbrdetails" ("name", "address", "number", "emp_details", "status") VALUES ('', '', '', '', '') RETURNING "mbrweb_mbrdetails"."id"; args=('', '', '', '', '')
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/mbrweb/views.py", line 26, in register
+    mbrUser =RealEstate.MbrDetails.all()
+NameError: name 'RealEstate' is not defined
+"POST /register/ HTTP/1.1" 500 61326
+(0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) INSERT INTO "mbrweb_mbrdetails" ("name", "address", "number", "emp_details", "status") VALUES ('', '', '', '', '') RETURNING "mbrweb_mbrdetails"."id"; args=('', '', '', '', '')
+"POST /register/ HTTP/1.1" 200 2865
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/img/mbr.jpg HTTP/1.1" 200 33079
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+"POST /confirmation/ HTTP/1.1" 200 1324
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"POST /confirmation/ HTTP/1.1" 200 1324
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.001) INSERT INTO "mbrweb_mbrdetails" ("name", "address", "number", "emp_details", "status") VALUES ('', '', '', '', '') RETURNING "mbrweb_mbrdetails"."id"; args=('', '', '', '', '')
+(0.000) SELECT "mbrweb_mbrdetails"."id", "mbrweb_mbrdetails"."name", "mbrweb_mbrdetails"."address", "mbrweb_mbrdetails"."number", "mbrweb_mbrdetails"."emp_details", "mbrweb_mbrdetails"."status" FROM "mbrweb_mbrdetails"  LIMIT 21; args=()
+"POST /register/ HTTP/1.1" 200 2865
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/mbr.jpg HTTP/1.1" 200 33079
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+"POST /confirmation/ HTTP/1.1" 200 1324
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
