@@ -1954,3 +1954,334 @@ DETAIL:  Key ("mortID")=(test) already exists.
 "GET /static/popper.min.js.map HTTP/1.1" 404 1680
 "GET /static/bootstrap4/js/bootstrap.min.js.map HTTP/1.1" 200 161998
 "GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.003) SELECT "reweb_realestate"."id", "reweb_realestate"."name", "reweb_realestate"."mortID" FROM "reweb_realestate" WHERE "reweb_realestate"."mortID" = 'test'; args=('test',)
+"POST /reweb/real_estate/ HTTP/1.1" 200 2294
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/popper.min.js HTTP/1.1" 200 19036
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/js/bootstrap.min.js HTTP/1.1" 200 48950
+"GET /static/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+"GET /static/img/realEstateBroker.jpg HTTP/1.1" 200 56786
+"GET /static/popper.min.js.map HTTP/1.1" 404 1680
+"GET /static/bootstrap4/js/bootstrap.min.js.map HTTP/1.1" 200 161998
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee" WHERE "empweb_employee"."username" = ''; args=('',)
+"POST /empweb/ HTTP/1.1" 200 1875
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.002) SELECT "reweb_realestate"."id", "reweb_realestate"."name", "reweb_realestate"."mortID" FROM "reweb_realestate" WHERE "reweb_realestate"."mortID" = 'test'; args=('test',)
+"POST /reweb/real_estate/ HTTP/1.1" 200 2294
+"GET /static/popper.min.js HTTP/1.1" 200 19036
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/bootstrap4/js/bootstrap.min.js HTTP/1.1" 200 48950
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+"GET /static/img/realEstateBroker.jpg HTTP/1.1" 200 56786
+"GET /static/popper.min.js.map HTTP/1.1" 404 1680
+"GET /static/bootstrap4/js/bootstrap.min.js.map HTTP/1.1" 200 161998
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.005) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee" WHERE "empweb_employee"."username" = ''; args=('',)
+"POST /empweb/ HTTP/1.1" 200 1875
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) SELECT "reweb_realestate"."id", "reweb_realestate"."name", "reweb_realestate"."mortID" FROM "reweb_realestate" WHERE "reweb_realestate"."mortID" = 'test'; args=('test',)
+"POST /reweb/real_estate/ HTTP/1.1" 200 1875
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.001) SELECT "reweb_realestate"."id", "reweb_realestate"."name", "reweb_realestate"."mortID" FROM "reweb_realestate" WHERE "reweb_realestate"."mortID" = ''; args=('',)
+"POST /reweb/real_estate/ HTTP/1.1" 200 1875
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "reweb_realestate"."id", "reweb_realestate"."name", "reweb_realestate"."mortID" FROM "reweb_realestate" WHERE "reweb_realestate"."mortID" = ''; args=('',)
+Internal Server Error: /reweb/real_estate/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/reweb/views.py", line 32, in mortId
+    return render(request,page)
+  File "/usr/local/lib/python3.7/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.7/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: empweb.urls.login.html
+"POST /reweb/real_estate/ HTTP/1.1" 500 75259
+(0.004) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "reweb_realestate"."id", "reweb_realestate"."name", "reweb_realestate"."mortID" FROM "reweb_realestate" WHERE "reweb_realestate"."mortID" = ''; args=('',)
+"POST /reweb/real_estate/ HTTP/1.1" 200 1875
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.004) SELECT "reweb_realestate"."id", "reweb_realestate"."name", "reweb_realestate"."mortID" FROM "reweb_realestate" WHERE "reweb_realestate"."mortID" = ''; args=('',)
+"POST /reweb/real_estate/ HTTP/1.1" 200 1875
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.004) SELECT "reweb_realestate"."id", "reweb_realestate"."name", "reweb_realestate"."mortID" FROM "reweb_realestate" WHERE "reweb_realestate"."mortID" = ''; args=('',)
+"POST /reweb/real_estate/ HTTP/1.1" 200 1875
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.002) SELECT "reweb_realestate"."id", "reweb_realestate"."name", "reweb_realestate"."mortID" FROM "reweb_realestate" WHERE "reweb_realestate"."mortID" = ''; args=('',)
+"POST /reweb/real_estate/ HTTP/1.1" 200 1875
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.001) SELECT "reweb_realestate"."id", "reweb_realestate"."name", "reweb_realestate"."mortID" FROM "reweb_realestate" WHERE "reweb_realestate"."mortID" = 'test'; args=('test',)
+"POST /reweb/real_estate/ HTTP/1.1" 200 1875
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.001) SELECT "reweb_realestate"."id", "reweb_realestate"."name", "reweb_realestate"."mortID" FROM "reweb_realestate" WHERE "reweb_realestate"."mortID" = 'test'; args=('test',)
+"POST /reweb/real_estate/ HTTP/1.1" 200 1875
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.006) SELECT "reweb_realestate"."id", "reweb_realestate"."name", "reweb_realestate"."mortID" FROM "reweb_realestate" WHERE "reweb_realestate"."mortID" = 'test'; args=('test',)
+"POST /reweb/real_estate/ HTTP/1.1" 200 1875
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.001) SELECT "reweb_realestate"."id", "reweb_realestate"."name", "reweb_realestate"."mortID" FROM "reweb_realestate" WHERE "reweb_realestate"."mortID" = 'test'; args=('test',)
+"POST /reweb/real_estate/ HTTP/1.1" 200 1875
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+"GET /reweb HTTP/1.1" 301 0
+"GET /reweb/ HTTP/1.1" 200 2473
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/popper.min.js HTTP/1.1" 200 19036
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/js/bootstrap.min.js HTTP/1.1" 200 48950
+"GET /static/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+"GET /static/img/realEstateBroker.jpg HTTP/1.1" 200 56786
+"GET /static/popper.min.js.map HTTP/1.1" 404 1680
+"GET /static/bootstrap4/js/bootstrap.min.js.map HTTP/1.1" 200 161998
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+"GET /reweb/real_estate/ HTTP/1.1" 200 2276
+"GET /static/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+"GET /static/bootstrap4/js/bootstrap.min.js HTTP/1.1" 200 48950
+"GET /static/popper.min.js HTTP/1.1" 200 19036
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/img/realEstateBroker.jpg HTTP/1.1" 200 56786
+"GET /static/popper.min.js.map HTTP/1.1" 404 1680
+"GET /static/bootstrap4/js/bootstrap.min.js.map HTTP/1.1" 200 161998
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.002) SELECT "reweb_realestate"."id", "reweb_realestate"."name", "reweb_realestate"."mortID" FROM "reweb_realestate" WHERE "reweb_realestate"."mortID" = 'test'; args=('test',)
+"POST /reweb/real_estate/ HTTP/1.1" 200 1875
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "reweb_realestate"."id", "reweb_realestate"."name", "reweb_realestate"."mortID" FROM "reweb_realestate" WHERE "reweb_realestate"."mortID" = ''; args=('',)
+"POST /reweb/real_estate/ HTTP/1.1" 200 1875
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.001) SELECT "reweb_realestate"."id", "reweb_realestate"."name", "reweb_realestate"."mortID" FROM "reweb_realestate" WHERE "reweb_realestate"."mortID" = ''; args=('',)
+"POST /reweb/real_estate/ HTTP/1.1" 200 1875
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+"GET /empweb HTTP/1.1" 301 0
+(0.004) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+"GET /empweb/ HTTP/1.1" 200 1875
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+(0.008) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee" WHERE "empweb_employee"."username" = 'test'; args=('test',)
+"POST /empweb/ HTTP/1.1" 200 2758
+"GET /static/popper.min.js HTTP/1.1" 200 19036
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/js/bootstrap.min.js HTTP/1.1" 200 48950
+"GET /static/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/popper.min.js.map HTTP/1.1" 404 1680
+"GET /static/bootstrap4/js/bootstrap.min.js.map HTTP/1.1" 200 161998
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.007) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET / HTTP/1.1" 200 1944
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/img/mbr.jpg HTTP/1.1" 200 33079
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.008) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+"GET /empweb/ HTTP/1.1" 200 1875
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee" WHERE "empweb_employee"."username" = 'test'; args=('test',)
+"POST /empweb/ HTTP/1.1" 200 2770
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/popper.min.js HTTP/1.1" 200 19036
+"GET /static/bootstrap4/js/bootstrap.min.js HTTP/1.1" 200 48950
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+"GET /static/popper.min.js.map HTTP/1.1" 404 1680
+"GET /static/bootstrap4/js/bootstrap.min.js.map HTTP/1.1" 200 161998
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+Internal Server Error: /empweb/confirmation/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_response(request, response)
+  File "/usr/local/lib/python3.7/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'tuple' object has no attribute 'get'
+"GET /empweb/confirmation/ HTTP/1.1" 500 52895
+(0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /empweb/confirmation/ HTTP/1.1" 200 1319
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+Internal Server Error: /empweb
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/local/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 192.168.99.100:8000/empweb/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /empweb HTTP/1.1" 500 58907
+"GET /empweb/confirmation/ HTTP/1.1" 200 1320
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee" WHERE "empweb_employee"."username" = ''; args=('',)
+"POST /empweb/ HTTP/1.1" 200 1875
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+"GET /empweb/confirmation/ HTTP/1.1" 200 1320
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+"GET /empweb/confirmation/ HTTP/1.1" 200 1323
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+"GET /empweb/confirmation/ HTTP/1.1" 200 1320
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+(0.002) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee" WHERE "empweb_employee"."username" = ''; args=('',)
+"POST /empweb/ HTTP/1.1" 200 1875
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+"GET /empweb/confirmation/ HTTP/1.1" 200 1324
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+"GET /empweb/confirmation/ HTTP/1.1" 200 1324
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641

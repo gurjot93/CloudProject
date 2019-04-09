@@ -46,3 +46,6 @@ def create_user(request):
     else:
         page='emp_create_user.html'
     return render(request,page)
+
+def confirmation(request):
+    return render(request,'confirmation.html')

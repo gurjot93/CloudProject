@@ -23,5 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index),
     path('mort_id/',views.mortId),
-    path('create_user/',views.create_user)
+    path('create_user/',views.create_user),
+    path('confirmation/',views.confirmation)
 ]

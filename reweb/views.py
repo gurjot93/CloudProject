@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import RealEstate
+from empweb import urls
 
 
 # Create your views here.
@@ -14,6 +15,7 @@ def mortId(request):
           try:
             reaEstateUser =RealEstate.objects.get(mortID=request.POST.get('mortID',''))
             print(reaEstateUser.name)
+            page='login.html'
            ##If there is no current user by that mortId then add a new user
           except Exception:
             print('No User found;creating a new user')
