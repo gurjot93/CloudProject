@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration</title>
+	<link rel="stylesheet" href= "{% static 'bootstrap4/css/bootstrap.min.css' %}"></link>
+	<link src="{% static 'bootstrap4/js/bootstrap.min.js' %} "></link>
+	<link href=" {% static 'css/style.css' %}" rel="stylesheet"></link>
+</head>
+<body class="login-body">
+    <div class="modal-dialog text-center">
+        <div class="col-sm-8 main-section">
+            <div class="modal-content">
+                <div class="col-12 dalLogo">
+                    <img src="{% static 'img/mbr.jpg' %}" alt="Logo"width="230" height="150">
+                </div>
+                <form class="col-12" action="/confirmation/" method="POST">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <!--Bootstrap Tooltips. (2019). Retrieved from https://getbootstrap.com/docs/4.1/components/tooltips/-->
+                        <input name="name" class="form-control" placeholder="Name" id="name"
+                        required  data-toggle="tooltip" data-placement="bottom" title="Enter a valid name">
+                    </div>
+                    <div class="form-group">
+                        <!--Bootstrap Tooltips. (2019). Retrieved from https://getbootstrap.com/docs/4.1/components/tooltips/-->
+                        <textarea rows="5" cols="50" input name="address" class="form-control" placeholder="Address" id="address"
+                        required  data-toggle="tooltip" data-placement="bottom" title="Enter a valid Address"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <!--Bootstrap Tooltips. (2019). Retrieved from https://getbootstrap.com/docs/4.1/components/tooltips/-->
+                        <input name="number" class="form-control" placeholder="Phone Number" id="number"
+                        required  data-toggle="tooltip" data-placement="bottom" title="Enter a valid number">
+                    </div>
+
+					<div class="form-group">
+                        <!--Bootstrap Tooltips. (2019). Retrieved from https://getbootstrap.com/docs/4.1/components/tooltips/-->
+                        <input name="employee" class="form-control" placeholder="Employee Details" id="employee"
+                        required  data-toggle="tooltip" data-placement="bottom" title="Enter valid details">
+                    </div>
+
+                    <button type="submit" class="btn login-button" value="/success" > <i class="fas fa-sign-in-alt"></i>Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
