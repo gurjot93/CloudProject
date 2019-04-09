@@ -29,10 +29,31 @@ def register(request):
 	return render(request,page)
 
 def confirmation(request):
-	return render(request,'confirmation.html')
+	return render(request,'mbr_confirmation.html')
 
 def formdetails(request):
+	mbrUsers =MbrDetails.objects.all()
+	##print("This is the name: " +mbrUsers[1].name)
+	print(mbrUsers)
+	##mbrUser = MbrDetails.objects.get(address='test')
+	##context ={'mbrUser':mbrUser}
 	return render(request,'formdetails.html')
+	##return render(request,'formdetails.html',context)
 
 def login(request):
-	return render(request,'login_mbr.html')
+	page='login_mbr.html'
+
+	if request.method == "POST":
+        ##Make sure a user exist
+		try:
+			employee =MbrDetails.objects.get(username=request.POST.get('username',''))
+			print(employee.password)
+			##Does the password match the user's password
+			if(request.POST.get('password','') ==employee.password ):
+				page ='formdetails.html'
+			else:
+				print("Invalid Login attemp")
+		except Exception:
+				print('No User found')
+
+	return render(request,page)
