@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>EMP Portal</title>
+	<title>Real Estate Portal</title>
     <link rel="stylesheet" href= "{% static 'bootstrap4/css/bootstrap.min.css' %}"></link>
     <script type="text/javascript" src="{% static 'popper.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'jquery-3.3.1.min.js' %}"></script>
@@ -23,25 +23,16 @@
                 <h1 class="standouttext">
                    Welcome!
                 </h1>
-                <form class="col-12" method="POST">
+                <form class="col-12" action="/empweb/" method="POST">
+                    {% csrf_token %}
+                    <div class="form-group">
+                            <!--Bootstrap Tooltips. (2019). Retrieved from https://getbootstrap.com/docs/4.1/components/tooltips/-->
+                            <input id='name'  class="form-control" placeholder="Name"  required  data-toggle="tooltip" data-placement="bottom" title="Enter in valid name">
+                    </div>
 					<div class="form-group">
                          <!--Bootstrap Tooltips. (2019). Retrieved from https://getbootstrap.com/docs/4.1/components/tooltips/-->
                          <input id='mortID' type="mortID" class="form-control" placeholder="MortID"  required  data-toggle="tooltip" data-placement="bottom" title="Enter in valid data">
                     </div>
-                    <div class="form-group">
-                        <!-- [11]"Dropdowns", Getbootstrap.com, 2019. [Online]. Available: https://getbootstrap.com/docs/4.0/components/dropdowns/. [Accessed: 06- Apr- 2019] -->
-                        <div class="dropdown show">
-                            <p class="standouttext">Form to request an appraisal of the property M1sID</p>
-                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Dropdown link
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                              <a class="dropdown-item" href="#">Form 1</a>
-                              <a class="dropdown-item" href="#">Form 2</a>
-                              <a class="dropdown-item" href="#">Form 3</a>
-                            </div>
-                        </div>
-                    </div>    
                     <button type="submit" class="btn login-button" value="/success" > <i class="fas fa-sign-in-alt"></i>Submit</button>
                 </form>
             </div>

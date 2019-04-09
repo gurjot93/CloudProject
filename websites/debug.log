@@ -18,3 +18,1170 @@
 "GET /static/jquery-3.3.1.min.js HTTP/1.1" 304 0
 "GET /static/bootstrap4/js/bootstrap.min.js HTTP/1.1" 304 0
 "GET /static/popper.min.js HTTP/1.1" 304 0
+(0.002) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+"GET /empweb/ HTTP/1.1" 200 1875
+"GET / HTTP/1.1" 200 1944
+"POST /register/ HTTP/1.1" 200 2865
+"GET /empweb/create_user/ HTTP/1.1" 200 3252
+"GET /empweb HTTP/1.1" 301 0
+(0.004) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+"GET /empweb/ HTTP/1.1" 200 1875
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+(0.002) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee" WHERE "empweb_employee"."username" = 'test'; args=('test',)
+"POST /empweb/ HTTP/1.1" 200 2758
+"GET / HTTP/1.1" 200 1944
+(0.014) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+"GET /empweb/ HTTP/1.1" 200 1875
+(0.002) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+(0.002) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee" WHERE "empweb_employee"."username" = 'test'; args=('test',)
+"POST /empweb/ HTTP/1.1" 200 2758
+"GET / HTTP/1.1" 200 1944
+"GET /static/img/mbr.jpg HTTP/1.1" 304 0
+(0.003) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+"GET /empweb/ HTTP/1.1" 200 1875
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/style.css HTTP/1.1" 304 0
+(0.002) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee" WHERE "empweb_employee"."username" = 'test'; args=('test',)
+"POST /empweb/ HTTP/1.1" 200 2758
+"GET /static/popper.min.js HTTP/1.1" 304 0
+"GET /static/jquery-3.3.1.min.js HTTP/1.1" 304 0
+"GET /static/bootstrap4/js/bootstrap.min.js HTTP/1.1" 304 0
+(0.086) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.014) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET / HTTP/1.1" 200 1944
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/img/mbr.jpg HTTP/1.1" 304 0
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3120
+"POST /register/ HTTP/1.1" 200 2865
+"POST /confirmation/ HTTP/1.1" 200 1969
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'rewb'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'rewb'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'rewb'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'rewb'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Not Found: /rewb
+"GET /rewb HTTP/1.1" 404 3099
+"GET /reweb HTTP/1.1" 301 0
+"GET /reweb/ HTTP/1.1" 200 2277
+"GET /static/img/realEstateBroker.jpg HTTP/1.1" 304 0
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+"GET /reweb/ HTTP/1.1" 200 2459
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/popper.min.js HTTP/1.1" 200 19036
+"GET /static/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/js/bootstrap.min.js HTTP/1.1" 200 48950
+"GET /static/img/realEstateBroker.jpg HTTP/1.1" 200 56786
+"GET /static/popper.min.js.map HTTP/1.1" 404 1680
+"GET /static/bootstrap4/js/bootstrap.min.js.map HTTP/1.1" 200 161998
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLPattern ''>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLPattern 'real_estate/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'reweb/empweb/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLPattern ''>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLPattern 'real_estate/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'reweb/empweb/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLPattern ''>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLPattern 'real_estate/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'reweb/empweb/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLPattern ''>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLPattern 'real_estate/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'reweb/empweb/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Not Found: /reweb/empweb/
+"GET /reweb/empweb/ HTTP/1.1" 404 3497
+"GET /reweb/ HTTP/1.1" 200 2460
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/popper.min.js HTTP/1.1" 200 19036
+"GET /static/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/js/bootstrap.min.js HTTP/1.1" 200 48950
+"GET /static/img/realEstateBroker.jpg HTTP/1.1" 200 56786
+"GET /static/popper.min.js.map HTTP/1.1" 404 1680
+"GET /static/bootstrap4/js/bootstrap.min.js.map HTTP/1.1" 200 161998
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.007) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+"GET /empweb/ HTTP/1.1" 200 1875
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+"GET /empweb/ HTTP/1.1" 200 1875
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+"GET /reweb/ HTTP/1.1" 200 2463
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/popper.min.js HTTP/1.1" 200 19036
+"GET /static/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+"GET /static/bootstrap4/js/bootstrap.min.js HTTP/1.1" 200 48950
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/img/realEstateBroker.jpg HTTP/1.1" 200 56786
+"GET /static/popper.min.js.map HTTP/1.1" 404 1680
+"GET /static/bootstrap4/js/bootstrap.min.js.map HTTP/1.1" 200 161998
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 're_mortId/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 're_mortId/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 're_mortId/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 're_mortId/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Not Found: /re_mortId/
+"GET /re_mortId/ HTTP/1.1" 404 3117
+"GET /reweb/ HTTP/1.1" 200 2462
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/bootstrap4/js/bootstrap.min.js HTTP/1.1" 200 48950
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/popper.min.js HTTP/1.1" 200 19036
+"GET /static/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+"GET /static/img/realEstateBroker.jpg HTTP/1.1" 200 56786
+"GET /static/popper.min.js.map HTTP/1.1" 404 1680
+"GET /static/bootstrap4/js/bootstrap.min.js.map HTTP/1.1" 200 161998
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLPattern ''>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLPattern 'real_estate/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'reweb/re_mortId/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLPattern ''>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLPattern 'real_estate/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'reweb/re_mortId/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLPattern ''>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLPattern 'real_estate/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'reweb/re_mortId/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLPattern ''>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLPattern 'real_estate/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'reweb/re_mortId/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Not Found: /reweb/re_mortId/
+"GET /reweb/re_mortId/ HTTP/1.1" 404 3506
+"GET /reweb/ HTTP/1.1" 200 2459
+"GET /static/popper.min.js HTTP/1.1" 200 19036
+"GET /static/bootstrap4/js/bootstrap.min.js HTTP/1.1" 200 48950
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+"GET /static/img/realEstateBroker.jpg HTTP/1.1" 200 56786
+"GET /static/popper.min.js.map HTTP/1.1" 404 1680
+"GET /static/bootstrap4/js/bootstrap.min.js.map HTTP/1.1" 200 161998
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLPattern ''>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLPattern 'real_estate/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'reweb/mortId/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLPattern ''>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLPattern 'real_estate/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'reweb/mortId/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLPattern ''>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLPattern 'real_estate/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'reweb/mortId/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLPattern ''>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>, <URLPattern 'real_estate/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'reweb/mortId/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Not Found: /reweb/mortId/
+"GET /reweb/mortId/ HTTP/1.1" 404 3497
+"GET /reweb/ HTTP/1.1" 200 2464
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/popper.min.js HTTP/1.1" 200 19036
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/js/bootstrap.min.js HTTP/1.1" 200 48950
+"GET /static/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+"GET /static/img/realEstateBroker.jpg HTTP/1.1" 200 56786
+"GET /static/popper.min.js.map HTTP/1.1" 404 1680
+"GET /static/bootstrap4/js/bootstrap.min.js.map HTTP/1.1" 200 161998
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+"GET /reweb/real_estate/ HTTP/1.1" 200 2744
+"GET /static/popper.min.js HTTP/1.1" 200 19036
+"GET /static/bootstrap4/js/bootstrap.min.js HTTP/1.1" 200 48950
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+"GET /static/img/realEstateBroker.jpg HTTP/1.1" 200 56786
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/popper.min.js.map HTTP/1.1" 404 1680
+"GET /static/bootstrap4/js/bootstrap.min.js.map HTTP/1.1" 200 161998
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+"GET /reweb/real_estate/ HTTP/1.1" 200 2064
+"GET /static/popper.min.js HTTP/1.1" 200 19036
+"GET /static/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+"GET /static/bootstrap4/js/bootstrap.min.js HTTP/1.1" 200 48950
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/img/realEstateBroker.jpg HTTP/1.1" 200 56786
+"GET /static/popper.min.js.map HTTP/1.1" 404 1680
+"GET /static/bootstrap4/js/bootstrap.min.js.map HTTP/1.1" 200 161998
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+Forbidden (CSRF token missing or incorrect.): /reweb/real_estate/
+"POST /reweb/real_estate/ HTTP/1.1" 403 2513
+"GET /reweb/real_estate/ HTTP/1.1" 200 2082
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/popper.min.js HTTP/1.1" 200 19036
+"GET /static/bootstrap4/js/bootstrap.min.js HTTP/1.1" 200 48950
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/img/realEstateBroker.jpg HTTP/1.1" 200 56786
+"GET /static/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+"GET /static/popper.min.js.map HTTP/1.1" 404 1680
+"GET /static/bootstrap4/js/bootstrap.min.js.map HTTP/1.1" 200 161998
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+Forbidden (CSRF token missing or incorrect.): /empweb/
+"POST /empweb/ HTTP/1.1" 403 2513
+"GET /reweb/real_estate/ HTTP/1.1" 200 2224
+"GET /static/popper.min.js HTTP/1.1" 200 19036
+"GET /static/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+"GET /static/bootstrap4/js/bootstrap.min.js HTTP/1.1" 200 48950
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/realEstateBroker.jpg HTTP/1.1" 200 56786
+"GET /static/popper.min.js.map HTTP/1.1" 404 1680
+"GET /static/bootstrap4/js/bootstrap.min.js.map HTTP/1.1" 200 161998
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+(0.002) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee" WHERE "empweb_employee"."username" = ''; args=('',)
+"POST /empweb/ HTTP/1.1" 200 1875
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+"GET /reweb/real_estate/ HTTP/1.1" 200 2224
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/popper.min.js HTTP/1.1" 200 19036
+"GET /static/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/js/bootstrap.min.js HTTP/1.1" 200 48950
+"GET /static/img/realEstateBroker.jpg HTTP/1.1" 200 56786
+"GET /static/popper.min.js.map HTTP/1.1" 404 1680
+"GET /static/bootstrap4/js/bootstrap.min.js.map HTTP/1.1" 200 161998
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+ALTER TABLE "reweb_realestate" RENAME COLUMN "username" TO "mortID"; (params ())
+(0.005) ALTER TABLE "reweb_realestate" RENAME COLUMN "username" TO "mortID"; args=()
+ALTER TABLE "reweb_realestate" RENAME COLUMN "password" TO "name"; (params ())
+(0.000) ALTER TABLE "reweb_realestate" RENAME COLUMN "password" TO "name"; args=()
+(0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.005) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('reweb', '0002_auto_20190409_1400', '2019-04-09T14:00:48.259405+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('reweb', '0002_auto_20190409_1400', datetime.datetime(2019, 4, 9, 14, 0, 48, 259405, tzinfo=<UTC>))
+(0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.006) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry'); args=('admin', 'logentry')
+(0.006) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission'); args=('auth', 'permission')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group'); args=('auth', 'group')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user'); args=('auth', 'user')
+(0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype'); args=('contenttypes', 'contenttype')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session'); args=('sessions', 'session')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+(0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'empweb' AND "django_content_type"."model" = 'employee'); args=('empweb', 'employee')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'empweb'; args=('empweb',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'reweb' AND "django_content_type"."model" = 'realestate'); args=('reweb', 'realestate')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (8) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(8,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'reweb'; args=('reweb',)
