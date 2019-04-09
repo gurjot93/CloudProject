@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from .models import MbrDetails
+import random
+import string
 
 
 # Create your views here.
@@ -19,6 +21,7 @@ def confirmation(request):
 		number=request.POST.get('number','')
 		emp_details=request.POST.get('emp_details','')
 		mbrUser= MbrDetails(
+			mortID=(createMortID()),
 			username=username,
 			password=password,
 			name= name,
@@ -28,9 +31,9 @@ def confirmation(request):
 		print("Saving New User into MbrDetails DB")
 		print(request.POST)
 		mbrUser.save()
-		##mbrUsers =MbrDetails.objects.all()
-		##print(mbrUsers)
-		##print(request.POST)
+		mbrUsers =MbrDetails.objects.all()
+		print(mbrUsers)
+		print(request.POST)
 	##mbrUser = MbrDetails.objects.get(username=username)
 	##print(mbrUser.mortID)
 	##context ={'mbrUser':mbrUser}
@@ -65,3 +68,7 @@ def login(request):
 				print('No User found')
 
 	return render(request,page)
+
+def createMortID():
+	letters = string.ascii_lowercase.join(string.ascii_uppercase)
+	return ''.join(random.choice(letters) for i in range(12))
