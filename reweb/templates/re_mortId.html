@@ -23,15 +23,16 @@
                 <h1 class="standouttext">
                    Welcome!
                 </h1>
-                <form class="col-12" action="/empweb/" method="POST">
+                <!--action="/empweb/" -->
+                <form class="col-12"  method="POST">
                     {% csrf_token %}
                     <div class="form-group">
                             <!--Bootstrap Tooltips. (2019). Retrieved from https://getbootstrap.com/docs/4.1/components/tooltips/-->
-                            <input id='name'  class="form-control" placeholder="Name"  required  data-toggle="tooltip" data-placement="bottom" title="Enter in valid name">
+                            <input name='name' id='name'  class="form-control" placeholder="Name"  required  data-toggle="tooltip" data-placement="bottom" title="Enter in valid name">
                     </div>
 					<div class="form-group">
                          <!--Bootstrap Tooltips. (2019). Retrieved from https://getbootstrap.com/docs/4.1/components/tooltips/-->
-                         <input id='mortID' type="mortID" class="form-control" placeholder="MortID"  required  data-toggle="tooltip" data-placement="bottom" title="Enter in valid data">
+                         <input name='mortID' id='mortID' type="mortID" class="form-control" placeholder="MortId"  required  data-toggle="tooltip" data-placement="bottom" title="Enter in valid data">
                     </div>
                     <button type="submit" class="btn login-button" value="/success" > <i class="fas fa-sign-in-alt"></i>Submit</button>
                 </form>
