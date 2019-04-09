@@ -1,7 +1,5 @@
-# Byte-compiled / optimized / DLL files
+*.pyc
 __pycache__/
-*.py[cod]
-*$py.class
 
 # Environments
 .env
@@ -9,3 +7,5 @@ __pycache__/
 env/
 venv/
 ENV/
+env.bak/
+venv.bak/
