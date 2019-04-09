@@ -5,11 +5,11 @@ from .models import Employee
 def index(request):
     page='login.html'
     employees =Employee.objects.all()
-    username = request.POST.get("username",'')
-    password = request.POST.get("password",'')
+    username = "this"
+    password = "password"
     ##Make sure a user exist
     try:
-        employee =Employee.objects.get(username=request.POST["username"])
+        employee =Employee.objects.get(username=username)
         ##Does the password match the user's password
         if(password ==employee.password ):
             page ='mortId.html'
@@ -19,7 +19,7 @@ def index(request):
         print('No User found')
 
     ##print(employee.password)
-    ##print(employees)
+    print(employees)
     return render(request,page)
 
 def mortId(request):
