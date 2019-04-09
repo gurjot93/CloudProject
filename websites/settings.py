@@ -128,3 +128,23 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS =[
     os.path.join(os.path.dirname(__file__),"static")
 ]
+
+#"Logging | Django documentation | Django", Docs.djangoproject.com, 2019. [Online]. Available: https://docs.djangoproject.com/en/2.2/topics/logging/. [Accessed: 04- Apr- 2019]
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'websites/debug.log',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
