@@ -21,6 +21,11 @@
                 <form class="col-12" action="/confirmation/" method="POST">
                     {% csrf_token %}
                     <div class="form-group">
+                            <!--Bootstrap Tooltips. (2019). Retrieved from https://getbootstrap.com/docs/4.1/components/tooltips/-->
+                            <input name="username" class="form-control" placeholder="Username" id="username"
+                            required  data-toggle="tooltip" data-placement="bottom" title="Enter a valid username">
+                        </div>
+                    <div class="form-group">
                         <!--Bootstrap Tooltips. (2019). Retrieved from https://getbootstrap.com/docs/4.1/components/tooltips/-->
                         <input name="name" class="form-control" placeholder="Name" id="name"
                         required  data-toggle="tooltip" data-placement="bottom" title="Enter a valid name">
@@ -41,6 +46,12 @@
                         <input name="employee" class="form-control" placeholder="Employee Details" id="employee"
                         required  data-toggle="tooltip" data-placement="bottom" title="Enter valid details">
                     </div>
+
+                    <div class="form-group">
+                            <!--Bootstrap Tooltips. (2019). Retrieved from https://getbootstrap.com/docs/4.1/components/tooltips/-->
+                            <input name="password" class="form-control" placeholder="Password" id="password"
+                            required  data-toggle="tooltip" data-placement="bottom" title="Enter a valid password">
+                        </div>
 
                     <button type="submit" class="btn login-button" value="/success" > <i class="fas fa-sign-in-alt"></i>Submit</button>
                 </form>

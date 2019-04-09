@@ -4524,3 +4524,378 @@ LINE 1: SELECT "mbrweb_mbrdetails"."mortID", "mbrweb_mbrdetails"."us...
                 AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
 (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "mbrweb_mbrdetails"."mortID", "mbrweb_mbrdetails"."username", "mbrweb_mbrdetails"."name", "mbrweb_mbrdetails"."address", "mbrweb_mbrdetails"."number", "mbrweb_mbrdetails"."emp_details", "mbrweb_mbrdetails"."status" FROM "mbrweb_mbrdetails"  LIMIT 21; args=()
+(0.001) SELECT "mbrweb_mbrdetails"."mortID", "mbrweb_mbrdetails"."username", "mbrweb_mbrdetails"."name", "mbrweb_mbrdetails"."address", "mbrweb_mbrdetails"."number", "mbrweb_mbrdetails"."emp_details", "mbrweb_mbrdetails"."status" FROM "mbrweb_mbrdetails"  LIMIT 21; args=()
+(0.002) SELECT "mbrweb_mbrdetails"."mortID", "mbrweb_mbrdetails"."username", "mbrweb_mbrdetails"."name", "mbrweb_mbrdetails"."address", "mbrweb_mbrdetails"."number", "mbrweb_mbrdetails"."emp_details", "mbrweb_mbrdetails"."status" FROM "mbrweb_mbrdetails"  LIMIT 21; args=()
+(0.001) SELECT "mbrweb_mbrdetails"."mortID", "mbrweb_mbrdetails"."username", "mbrweb_mbrdetails"."name", "mbrweb_mbrdetails"."address", "mbrweb_mbrdetails"."number", "mbrweb_mbrdetails"."emp_details", "mbrweb_mbrdetails"."status" FROM "mbrweb_mbrdetails"  LIMIT 21; args=()
+(0.001) SELECT "mbrweb_mbrdetails"."mortID", "mbrweb_mbrdetails"."username", "mbrweb_mbrdetails"."name", "mbrweb_mbrdetails"."address", "mbrweb_mbrdetails"."number", "mbrweb_mbrdetails"."emp_details", "mbrweb_mbrdetails"."status" FROM "mbrweb_mbrdetails"  LIMIT 21; args=()
+(0.001) SELECT "mbrweb_mbrdetails"."mortID", "mbrweb_mbrdetails"."username", "mbrweb_mbrdetails"."name", "mbrweb_mbrdetails"."address", "mbrweb_mbrdetails"."number", "mbrweb_mbrdetails"."emp_details", "mbrweb_mbrdetails"."status" FROM "mbrweb_mbrdetails"  LIMIT 21; args=()
+Internal Server Error: /formdetails/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.ProgrammingError: column mbrweb_mbrdetails.mortID does not exist
+LINE 1: SELECT "mbrweb_mbrdetails"."mortID", "mbrweb_mbrdetails"."us...
+               ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/mbrweb/views.py", line 37, in formdetails
+    print(mbrUsers)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 244, in __repr__
+    data = list(self[:REPR_OUTPUT_SIZE + 1])
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 268, in __iter__
+    self._fetch_all()
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1065, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column mbrweb_mbrdetails.mortID does not exist
+LINE 1: SELECT "mbrweb_mbrdetails"."mortID", "mbrweb_mbrdetails"."us...
+               ^
+
+"GET /formdetails/ HTTP/1.1" 500 117830
+(0.002) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.004) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.003) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "mbrweb_mbrdetails"."mortID", "mbrweb_mbrdetails"."username", "mbrweb_mbrdetails"."name", "mbrweb_mbrdetails"."address", "mbrweb_mbrdetails"."number", "mbrweb_mbrdetails"."emp_details", "mbrweb_mbrdetails"."status" FROM "mbrweb_mbrdetails"  LIMIT 21; args=()
+Exception while resolving variable 'mbrUser' in template 'formdetails.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'mbrUser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'mbrUser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'mbrUser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [mbrUser] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'obHSpVM4Mn1WpZ27ORCaDS2GPruINdgaAfCgGtikceFZ8jMst74Sp7PAHgzfnlWn'>, 'request': <WSGIRequest: GET '/formdetails/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fd4f4bffbf8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fd4f97c2a90>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fd4f40b1780>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}]
+Exception while resolving variable 'mbrUser' in template 'formdetails.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'mbrUser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'mbrUser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'mbrUser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [mbrUser] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'obHSpVM4Mn1WpZ27ORCaDS2GPruINdgaAfCgGtikceFZ8jMst74Sp7PAHgzfnlWn'>, 'request': <WSGIRequest: GET '/formdetails/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fd4f4bffbf8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fd4f97c2a90>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fd4f40b1780>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}]
+Exception while resolving variable 'mbrUser' in template 'formdetails.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'mbrUser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'mbrUser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'mbrUser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [mbrUser] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'obHSpVM4Mn1WpZ27ORCaDS2GPruINdgaAfCgGtikceFZ8jMst74Sp7PAHgzfnlWn'>, 'request': <WSGIRequest: GET '/formdetails/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fd4f4bffbf8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fd4f97c2a90>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fd4f40b1780>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}]
+Exception while resolving variable 'mbrUser' in template 'formdetails.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'mbrUser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'mbrUser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'mbrUser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [mbrUser] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'obHSpVM4Mn1WpZ27ORCaDS2GPruINdgaAfCgGtikceFZ8jMst74Sp7PAHgzfnlWn'>, 'request': <WSGIRequest: GET '/formdetails/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fd4f4bffbf8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fd4f97c2a90>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fd4f40b1780>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}]
+"GET /formdetails/ HTTP/1.1" 200 3599
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/mbr.jpg HTTP/1.1" 200 33079
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+"GET / HTTP/1.1" 200 1944
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/mbr.jpg HTTP/1.1" 200 33079
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.001) INSERT INTO "mbrweb_mbrdetails" ("username", "name", "address", "number", "emp_details", "status") VALUES ('', '', '', '', '', '') RETURNING "mbrweb_mbrdetails"."mortID"; args=('', '', '', '', '', '')
+(0.001) SELECT "mbrweb_mbrdetails"."mortID", "mbrweb_mbrdetails"."username", "mbrweb_mbrdetails"."name", "mbrweb_mbrdetails"."address", "mbrweb_mbrdetails"."number", "mbrweb_mbrdetails"."emp_details", "mbrweb_mbrdetails"."status" FROM "mbrweb_mbrdetails"  LIMIT 21; args=()
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.ProgrammingError: column "username" of relation "mbrweb_mbrdetails" does not exist
+LINE 1: INSERT INTO "mbrweb_mbrdetails" ("username", "name", "addres...
+                                         ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/mbrweb/views.py", line 25, in register
+    mbrUser.save()
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/base.py", line 718, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/base.py", line 748, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/base.py", line 831, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/base.py", line 869, in _do_insert
+    using=using, raw=raw)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 1136, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1289, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column "username" of relation "mbrweb_mbrdetails" does not exist
+LINE 1: INSERT INTO "mbrweb_mbrdetails" ("username", "name", "addres...
+                                         ^
+
+"POST /register/ HTTP/1.1" 500 134510
+(0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET / HTTP/1.1" 200 1944
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/img/mbr.jpg HTTP/1.1" 200 33079
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.003) SELECT "mbrweb_mbrdetails"."mortID", "mbrweb_mbrdetails"."username", "mbrweb_mbrdetails"."name", "mbrweb_mbrdetails"."address", "mbrweb_mbrdetails"."number", "mbrweb_mbrdetails"."emp_details", "mbrweb_mbrdetails"."status" FROM "mbrweb_mbrdetails" WHERE "mbrweb_mbrdetails"."username" = ''; args=('',)
+"POST /login/ HTTP/1.1" 200 1883
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/mbr.jpg HTTP/1.1" 200 33079
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+"GET / HTTP/1.1" 200 1944
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/mbr.jpg HTTP/1.1" 200 33079
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+"GET /empweb/ HTTP/1.1" 200 1875
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.002) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+(0.003) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee" WHERE "empweb_employee"."username" = 'test'; args=('test',)
+"POST /empweb/ HTTP/1.1" 200 2770
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/popper.min.js HTTP/1.1" 200 19036
+"GET /static/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/js/bootstrap.min.js HTTP/1.1" 200 48950
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/popper.min.js.map HTTP/1.1" 404 1680
+"GET /static/bootstrap4/js/bootstrap.min.js.map HTTP/1.1" 200 161998
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+"GET /empweb/confirmation/ HTTP/1.1" 200 1324
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.004) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee" WHERE "empweb_employee"."username" = ''; args=('',)
+"POST /empweb/ HTTP/1.1" 200 1875
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+"GET / HTTP/1.1" 200 1944
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/mbr.jpg HTTP/1.1" 200 33079
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+(0.003) INSERT INTO "mbrweb_mbrdetails" ("username", "name", "address", "number", "emp_details", "status") VALUES ('', '', '', '', '', '') RETURNING "mbrweb_mbrdetails"."mortID"; args=('', '', '', '', '', '')
+(0.001) SELECT "mbrweb_mbrdetails"."mortID", "mbrweb_mbrdetails"."username", "mbrweb_mbrdetails"."name", "mbrweb_mbrdetails"."address", "mbrweb_mbrdetails"."number", "mbrweb_mbrdetails"."emp_details", "mbrweb_mbrdetails"."status" FROM "mbrweb_mbrdetails"  LIMIT 21; args=()
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.ProgrammingError: column "username" of relation "mbrweb_mbrdetails" does not exist
+LINE 1: INSERT INTO "mbrweb_mbrdetails" ("username", "name", "addres...
+                                         ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/mbrweb/views.py", line 25, in register
+    mbrUser.save()
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/base.py", line 718, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/base.py", line 748, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/base.py", line 831, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/base.py", line 869, in _do_insert
+    using=using, raw=raw)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 1136, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1289, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column "username" of relation "mbrweb_mbrdetails" does not exist
+LINE 1: INSERT INTO "mbrweb_mbrdetails" ("username", "name", "addres...
+                                         ^
+
+"POST /register/ HTTP/1.1" 500 134509
+"GET / HTTP/1.1" 200 1943
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/img/mbr.jpg HTTP/1.1" 200 33079
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641
+"GET /register/?csrfmiddlewaretoken=HrXqbfSs8msIxRSOF3jkyuRLeVZZGFLrTvSOsNoIyd6LgbC9kjL2kJEF6K4wgNrE HTTP/1.1" 200 3734
+"GET /static/css/style.css HTTP/1.1" 200 2742
+"GET /static/img/mbr.jpg HTTP/1.1" 200 33079
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144883
+"GET /static/bootstrap4/css/bootstrap.min.css.map HTTP/1.1" 200 551641

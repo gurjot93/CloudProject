@@ -32,11 +32,14 @@ def confirmation(request):
 	return render(request,'mbr_confirmation.html')
 
 def formdetails(request):
-	mbrUsers =MbrDetails.objects.all()
-	##print("This is the name: " +mbrUsers[1].name)
-	print(mbrUsers)
-	##mbrUser = MbrDetails.objects.get(address='test')
-	##context ={'mbrUser':mbrUser}
+	try:
+		mbrUsers =MbrDetails.objects.all()
+		##print("This is the name: " +mbrUsers[1].name)
+		print(mbrUsers)
+		##mbrUser = MbrDetails.objects.get(address='test')
+		##context ={'mbrUser':mbrUser}
+	except Exception:
+		print("Error getting MBRUsers")
 	return render(request,'formdetails.html')
 	##return render(request,'formdetails.html',context)
 
