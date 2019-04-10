@@ -23,10 +23,11 @@
                 <h1 class="standouttext">
                    Welcome!
                 </h1>
-                <form class="col-12" method="POST">
-					<div class="form-group">
+                <form class="col-12" action="confirmation/" method="POST">
+                    {% csrf_token %}
+                    <div class="form-group">
                          <!--Bootstrap Tooltips. (2019). Retrieved from https://getbootstrap.com/docs/4.1/components/tooltips/-->
-                         <input id='mortID' type="mortID" class="form-control" placeholder="MortID"  required  data-toggle="tooltip" data-placement="bottom" title="Enter in valid data">
+                         <input name="mortID" id='mortID' type="mortID" class="form-control" placeholder="MortID"  required  data-toggle="tooltip" data-placement="bottom" title="Enter in valid data">
                     </div>
                     <div class="form-group">
                             <!-- [11]"Dropdowns", Getbootstrap.com, 2019. [Online]. Available: https://getbootstrap.com/docs/4.0/components/dropdowns/. [Accessed: 06- Apr- 2019] -->
@@ -36,11 +37,11 @@
                                   Dropdown link
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                  <a class="dropdown-item" href="confirmation/">MBR Form</a>
+                                  <a class="dropdown-item">MBR Form</a>
                                 </div>
                             </div>
                         </div>    
-                    <!-- <button type="submit" class="btn login-button" value="/success" > <i class="fas fa-sign-in-alt"></i>Submit</button>-->
+                   <button type="submit" class="btn login-button" value="/success" > <i class="fas fa-sign-in-alt"></i>Submit</button>
                 </form>
             </div>
         </div>

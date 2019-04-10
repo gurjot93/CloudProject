@@ -14559,20 +14559,97 @@ django.template.base.VariableDoesNotExist: Failed lookup for key [mortID] in 'no
 (0.000) BEGIN; args=None
 (0.003) INSERT INTO "empweb_employee" ("employee_name", "username", "password", "salary", "startDate") VALUES ('test', 'test', 'test', 'test', 'test'); args=['test', 'test', 'test', 'test', 'test']
 "POST /empweb/create_user/ HTTP/1.1" 200 3252
+<<<<<<< HEAD
 "GET / HTTP/1.1" 200 1943
 (0.005) SELECT "mbrweb_mbrdetails"."id", "mbrweb_mbrdetails"."mortID", "mbrweb_mbrdetails"."username", "mbrweb_mbrdetails"."password", "mbrweb_mbrdetails"."name", "mbrweb_mbrdetails"."address", "mbrweb_mbrdetails"."number", "mbrweb_mbrdetails"."emp_details", "mbrweb_mbrdetails"."status" FROM "mbrweb_mbrdetails" WHERE "mbrweb_mbrdetails"."username" = ''; args=('',)
 "POST /login/ HTTP/1.1" 200 1877
 (0.004) SELECT "mbrweb_mbrdetails"."id", "mbrweb_mbrdetails"."mortID", "mbrweb_mbrdetails"."username", "mbrweb_mbrdetails"."password", "mbrweb_mbrdetails"."name", "mbrweb_mbrdetails"."address", "mbrweb_mbrdetails"."number", "mbrweb_mbrdetails"."emp_details", "mbrweb_mbrdetails"."status" FROM "mbrweb_mbrdetails" WHERE "mbrweb_mbrdetails"."username" = 'test'; args=('test',)
 "POST /login/ HTTP/1.1" 200 4124
+=======
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /code/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /code/empweb/locale with glob **/*.mo.
+Watching dir /code/mbrweb/locale with glob **/*.mo.
+Watching dir /code/reweb/locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET / HTTP/1.1" 200 1943
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 200 144877
+"GET /static/css/style.css HTTP/1.1" 200 2595
+"GET /static/img/mbr.jpg HTTP/1.1" 200 33079
+"GET /register/?csrfmiddlewaretoken=OMDytIdYArhOKlcdFtvF84PDkFVszp8KWKyHq2gRJJ1NV3Wo2fvn5jXZpofRnwDp HTTP/1.1" 200 3741
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/img/mbr.jpg HTTP/1.1" 304 0
+(0.026) INSERT INTO "mbrweb_mbrdetails" ("mortID", "username", "password", "name", "address", "number", "emp_details", "status") VALUES ('tboglrniyQgi', 'test3', 'test3', 'test3', 'test3', '890', 'test3', 'pending'); args=['tboglrniyQgi', 'test3', 'test3', 'test3', 'test3', '890', 'test3', 'pending']
+(0.000) SELECT "mbrweb_mbrdetails"."id", "mbrweb_mbrdetails"."mortID", "mbrweb_mbrdetails"."username", "mbrweb_mbrdetails"."password", "mbrweb_mbrdetails"."name", "mbrweb_mbrdetails"."address", "mbrweb_mbrdetails"."number", "mbrweb_mbrdetails"."emp_details", "mbrweb_mbrdetails"."status" FROM "mbrweb_mbrdetails"  LIMIT 21; args=()
+(0.000) SELECT "mbrweb_mbrdetails"."id", "mbrweb_mbrdetails"."mortID", "mbrweb_mbrdetails"."username", "mbrweb_mbrdetails"."password", "mbrweb_mbrdetails"."name", "mbrweb_mbrdetails"."address", "mbrweb_mbrdetails"."number", "mbrweb_mbrdetails"."emp_details", "mbrweb_mbrdetails"."status" FROM "mbrweb_mbrdetails" WHERE "mbrweb_mbrdetails"."mortID" = 'tboglrniyQgi'; args=('tboglrniyQgi',)
+"POST /mbr_confirmation/ HTTP/1.1" 200 1990
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/img/mbr.jpg HTTP/1.1" 304 0
+"POST / HTTP/1.1" 200 1943
+(0.001) SELECT "mbrweb_mbrdetails"."id", "mbrweb_mbrdetails"."mortID", "mbrweb_mbrdetails"."username", "mbrweb_mbrdetails"."password", "mbrweb_mbrdetails"."name", "mbrweb_mbrdetails"."address", "mbrweb_mbrdetails"."number", "mbrweb_mbrdetails"."emp_details", "mbrweb_mbrdetails"."status" FROM "mbrweb_mbrdetails" WHERE "mbrweb_mbrdetails"."username" = ''; args=('',)
+"POST /login/ HTTP/1.1" 200 1877
+(0.001) SELECT "mbrweb_mbrdetails"."id", "mbrweb_mbrdetails"."mortID", "mbrweb_mbrdetails"."username", "mbrweb_mbrdetails"."password", "mbrweb_mbrdetails"."name", "mbrweb_mbrdetails"."address", "mbrweb_mbrdetails"."number", "mbrweb_mbrdetails"."emp_details", "mbrweb_mbrdetails"."status" FROM "mbrweb_mbrdetails" WHERE "mbrweb_mbrdetails"."username" = 'test3'; args=('test3',)
+"POST /login/ HTTP/1.1" 200 4126
+"POST / HTTP/1.1" 200 1943
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/img/mbr.jpg HTTP/1.1" 304 0
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+"GET /empweb/ HTTP/1.1" 200 1875
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/img/buisnessman.png HTTP/1.1" 200 25975
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+(0.000) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee" WHERE "empweb_employee"."username" = 'test3'; args=('test3',)
+"POST /empweb/ HTTP/1.1" 200 1875
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+(0.000) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee" WHERE "empweb_employee"."username" = 'test'; args=('test',)
+"POST /empweb/ HTTP/1.1" 200 1875
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/img/buisnessman.png HTTP/1.1" 304 0
+"GET /empweb/create_user/ HTTP/1.1" 200 3252
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/img/buisnessman.png HTTP/1.1" 304 0
+(0.026) INSERT INTO "empweb_employee" ("employee_name", "username", "password", "salary", "startDate") VALUES ('test3', 'test3', 'test3', '1234', '123'); args=['test3', 'test3', 'test3', '1234', '123']
+(0.000) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+"POST /empweb/create_user/ HTTP/1.1" 200 1875
+(0.001) INSERT INTO "empweb_employee" ("employee_name", "username", "password", "salary", "startDate") VALUES ('', 'test3', 'test3', '0', '08/04/2019'); args=['', 'test3', 'test3', '0', '08/04/2019']
+"POST /empweb/create_user/ HTTP/1.1" 200 3252
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/img/buisnessman.png HTTP/1.1" 304 0
+"GET /empweb/mort_id/ HTTP/1.1" 200 2770
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/popper.min.js HTTP/1.1" 200 19032
+"GET /static/jquery-3.3.1.min.js HTTP/1.1" 200 86926
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/bootstrap4/js/bootstrap.min.js HTTP/1.1" 200 48944
+"GET /static/img/buisnessman.png HTTP/1.1" 304 0
 Exception while resolving variable 'name' in template 'unknown'.
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
     response = get_response(request)
-  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
     resolver_match = resolver.resolve(request.path_info)
-  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
     raise Resolver404({'tried': tried, 'path': new_path})
-django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'favicon.ico'}
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern ''>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'mort_id/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'create_user/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'confirmation/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'empweb/mort_id/confirmation/'}
 
 During handling of the above exception, another exception occurred:
 
@@ -14605,11 +14682,11 @@ Exception while resolving variable 'name' in template 'unknown'.
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
     response = get_response(request)
-  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
     resolver_match = resolver.resolve(request.path_info)
-  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
     raise Resolver404({'tried': tried, 'path': new_path})
-django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'favicon.ico'}
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern ''>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'mort_id/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'create_user/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'confirmation/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'empweb/mort_id/confirmation/'}
 
 During handling of the above exception, another exception occurred:
 
@@ -14637,16 +14714,16 @@ During handling of the above exception, another exception occurred:
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
     (bit, current))  # missing attribute
-django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
 Exception while resolving variable 'name' in template 'unknown'.
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
     response = get_response(request)
-  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
     resolver_match = resolver.resolve(request.path_info)
-  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
     raise Resolver404({'tried': tried, 'path': new_path})
-django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'favicon.ico'}
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern ''>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'mort_id/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'create_user/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'confirmation/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'empweb/mort_id/confirmation/'}
 
 During handling of the above exception, another exception occurred:
 
@@ -14679,11 +14756,11 @@ Exception while resolving variable 'name' in template 'unknown'.
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
     response = get_response(request)
-  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
     resolver_match = resolver.resolve(request.path_info)
-  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
     raise Resolver404({'tried': tried, 'path': new_path})
-django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'favicon.ico'}
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern ''>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'mort_id/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'create_user/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'confirmation/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'empweb/mort_id/confirmation/'}
 
 During handling of the above exception, another exception occurred:
 
@@ -14712,6 +14789,877 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
     (bit, current))  # missing attribute
 django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Not Found: /empweb/mort_id/confirmation/
+"GET /empweb/mort_id/confirmation/ HTTP/1.1" 404 3870
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern ''>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'mort_id/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'create_user/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'confirmation/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'empweb/mort_id/confirmation/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern ''>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'mort_id/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'create_user/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'confirmation/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'empweb/mort_id/confirmation/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern ''>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'mort_id/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'create_user/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'confirmation/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'empweb/mort_id/confirmation/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern ''>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'mort_id/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'create_user/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'confirmation/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'empweb/mort_id/confirmation/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Not Found: /empweb/mort_id/confirmation/
+"GET /empweb/mort_id/confirmation/ HTTP/1.1" 404 3870
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern ''>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'mort_id/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'create_user/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'confirmation/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'empweb/mort_id/confirmation/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern ''>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'mort_id/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'create_user/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'confirmation/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'empweb/mort_id/confirmation/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern ''>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'mort_id/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'create_user/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'confirmation/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'empweb/mort_id/confirmation/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern ''>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'mort_id/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'create_user/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'confirmation/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'empweb/mort_id/confirmation/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Not Found: /empweb/mort_id/confirmation/
+"GET /empweb/mort_id/confirmation/ HTTP/1.1" 404 3870
+"GET /empweb/confirmation HTTP/1.1" 301 0
+"GET /empweb/confirmation/ HTTP/1.1" 200 1324
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/img/buisnessman.png HTTP/1.1" 304 0
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+(0.000) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee" WHERE "empweb_employee"."username" = ''; args=('',)
+"POST /empweb/ HTTP/1.1" 200 1875
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /code/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /code/empweb/locale with glob **/*.mo.
+Watching dir /code/mbrweb/locale with glob **/*.mo.
+Watching dir /code/reweb/locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+(0.000) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee" WHERE "empweb_employee"."username" = ''; args=('',)
+"POST /empweb/ HTTP/1.1" 200 1875
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/img/buisnessman.png HTTP/1.1" 304 0
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'mort_id/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'mort_id/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'mort_id/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'mort_id/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Not Found: /mort_id/
+"GET /mort_id/ HTTP/1.1" 404 3108
+"GET /empweb/mort_id/ HTTP/1.1" 200 2771
+"GET /static/jquery-3.3.1.min.js HTTP/1.1" 304 0
+"GET /static/bootstrap4/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/popper.min.js HTTP/1.1" 304 0
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'confirmation/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'confirmation/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'confirmation/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>
+>>>>>>> c750b4f24a5f00b4ca50e1433d8cd7a281b9d28d
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+<<<<<<< HEAD
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'favicon.ico'}
+=======
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'confirmation/'}
+>>>>>>> c750b4f24a5f00b4ca50e1433d8cd7a281b9d28d
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+<<<<<<< HEAD
+=======
+Not Found: /confirmation/
+"GET /confirmation/ HTTP/1.1" 404 3123
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /code/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /code/empweb/locale with glob **/*.mo.
+Watching dir /code/mbrweb/locale with glob **/*.mo.
+Watching dir /code/reweb/locale with glob **/*.mo.
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+"GET /empweb/ HTTP/1.1" 200 1875
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/img/buisnessman.png HTTP/1.1" 304 0
+"GET /empweb/mort_id/ HTTP/1.1" 200 2778
+"GET /static/bootstrap4/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/popper.min.js HTTP/1.1" 304 0
+"GET /static/jquery-3.3.1.min.js HTTP/1.1" 304 0
+"GET /empweb/confirmation/ HTTP/1.1" 200 1324
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+(0.000) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee" WHERE "empweb_employee"."username" = ''; args=('',)
+"POST /empweb/ HTTP/1.1" 200 1875
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/img/buisnessman.png HTTP/1.1" 304 0
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+(0.000) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee" WHERE "empweb_employee"."username" = 'test3'; args=('test3',)
+"POST /empweb/ HTTP/1.1" 200 2778
+"GET /static/jquery-3.3.1.min.js HTTP/1.1" 304 0
+"GET /static/bootstrap4/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/popper.min.js HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 1943
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/img/mbr.jpg HTTP/1.1" 304 0
+>>>>>>> c750b4f24a5f00b4ca50e1433d8cd7a281b9d28d
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+<<<<<<< HEAD
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'favicon.ico'}
+=======
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern ''>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'mort_id/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'create_user/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'confirmation/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'empweb/login'}
+>>>>>>> c750b4f24a5f00b4ca50e1433d8cd7a281b9d28d
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+<<<<<<< HEAD
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>
+=======
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern ''>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'mort_id/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'create_user/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'confirmation/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'empweb/login'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+>>>>>>> c750b4f24a5f00b4ca50e1433d8cd7a281b9d28d
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+<<<<<<< HEAD
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'favicon.ico'}
+=======
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern ''>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'mort_id/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'create_user/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'confirmation/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'empweb/login'}
+>>>>>>> c750b4f24a5f00b4ca50e1433d8cd7a281b9d28d
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+<<<<<<< HEAD
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'favicon.ico'}
+=======
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern ''>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'mort_id/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'create_user/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'confirmation/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'empweb/login'}
+>>>>>>> c750b4f24a5f00b4ca50e1433d8cd7a281b9d28d
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+<<<<<<< HEAD
 Not Found: /favicon.ico
 "GET /favicon.ico HTTP/1.1" 404 3124
 (0.004) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
@@ -14730,3 +15678,477 @@ Not Found: /favicon.ico
 (0.002) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee" WHERE "empweb_employee"."username" = 'test'; args=('test',)
 "POST /empweb/ HTTP/1.1" 200 2612
 "GET /empweb/confirmation/ HTTP/1.1" 200 1324
+=======
+Not Found: /empweb/login
+"GET /empweb/login HTTP/1.1" 404 3822
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+"GET /empweb/ HTTP/1.1" 200 1875
+"GET /static/img/buisnessman.png HTTP/1.1" 304 0
+"GET /empweb/mort_id/ HTTP/1.1" 200 2778
+"GET /static/jquery-3.3.1.min.js HTTP/1.1" 304 0
+"GET /static/popper.min.js HTTP/1.1" 304 0
+"GET /static/bootstrap4/js/bootstrap.min.js HTTP/1.1" 304 0
+File /code/empweb/urls.py. is_changed: False, is_new: True
+File /code/empweb/urls.py previous mtime: None, current mtime: 1554871811.7281775
+/code/empweb/urls.py notified as changed. Signal results: [(<function translation_file_changed at 0x7f2be17ee048>, None)].
+/code/empweb/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /code/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /code/empweb/locale with glob **/*.mo.
+Watching dir /code/mbrweb/locale with glob **/*.mo.
+Watching dir /code/reweb/locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /empweb/create_user/ HTTP/1.1" 200 3252
+File /code/empweb/urls.py. is_changed: False, is_new: True
+File /code/empweb/urls.py previous mtime: None, current mtime: 1554871867.1437938
+/code/empweb/urls.py notified as changed. Signal results: [(<function translation_file_changed at 0x7f7f629e3048>, None)].
+/code/empweb/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /code/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /code/empweb/locale with glob **/*.mo.
+Watching dir /code/mbrweb/locale with glob **/*.mo.
+Watching dir /code/reweb/locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+File /code/empweb/urls.py. is_changed: False, is_new: True
+File /code/empweb/urls.py previous mtime: None, current mtime: 1554871875.8477335
+/code/empweb/urls.py notified as changed. Signal results: [(<function translation_file_changed at 0x7f5d46081048>, None)].
+/code/empweb/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /code/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /code/empweb/locale with glob **/*.mo.
+Watching dir /code/mbrweb/locale with glob **/*.mo.
+Watching dir /code/reweb/locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+File /code/empweb/urls.py. is_changed: False, is_new: True
+File /code/empweb/urls.py previous mtime: None, current mtime: 1554871879.8957055
+/code/empweb/urls.py notified as changed. Signal results: [(<function translation_file_changed at 0x7f4fe8f06048>, None)].
+/code/empweb/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /code/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /code/empweb/locale with glob **/*.mo.
+Watching dir /code/mbrweb/locale with glob **/*.mo.
+Watching dir /code/reweb/locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET / HTTP/1.1" 200 1943
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/img/mbr.jpg HTTP/1.1" 304 0
+"GET /empweb/ HTTP/1.1" 200 1961
+"GET /register/?csrfmiddlewaretoken=XOhTIHzA9CAn9fIoqMntr2ei0qlvdUGE5Mc2F1CtiUkmkXszNynbohmE59FU11bj HTTP/1.1" 200 3741
+(0.013) INSERT INTO "empweb_employee" ("employee_name", "username", "password", "salary", "startDate") VALUES ('', '', '', '0', '08/04/2019'); args=['', '', '', '0', '08/04/2019']
+(0.000) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+"POST /empweb/create_user/ HTTP/1.1" 200 1875
+(0.001) INSERT INTO "empweb_employee" ("employee_name", "username", "password", "salary", "startDate") VALUES ('', 'test3', 'test3', '0', '08/04/2019'); args=['', 'test3', 'test3', '0', '08/04/2019']
+"POST /empweb/create_user/ HTTP/1.1" 200 3252
+File /code/empweb/views.py. is_changed: False, is_new: True
+File /code/empweb/views.py previous mtime: None, current mtime: 1554872079.5023236
+/code/empweb/views.py notified as changed. Signal results: [(<function translation_file_changed at 0x7f2f4ab92048>, None)].
+/code/empweb/views.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /code/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /code/empweb/locale with glob **/*.mo.
+Watching dir /code/mbrweb/locale with glob **/*.mo.
+Watching dir /code/reweb/locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+File /code/empweb/views.py. is_changed: False, is_new: True
+File /code/empweb/views.py previous mtime: None, current mtime: 1554872080.2543185
+/code/empweb/views.py notified as changed. Signal results: [(<function translation_file_changed at 0x7fcc4092b048>, None)].
+/code/empweb/views.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /code/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /code/empweb/locale with glob **/*.mo.
+Watching dir /code/mbrweb/locale with glob **/*.mo.
+Watching dir /code/reweb/locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+File /code/empweb/views.py. is_changed: False, is_new: True
+File /code/empweb/views.py previous mtime: None, current mtime: 1554872100.3621793
+/code/empweb/views.py notified as changed. Signal results: [(<function translation_file_changed at 0x7f58528c2048>, None)].
+/code/empweb/views.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /code/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /code/empweb/locale with glob **/*.mo.
+Watching dir /code/mbrweb/locale with glob **/*.mo.
+Watching dir /code/reweb/locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) INSERT INTO "empweb_employee" ("employee_name", "username", "password", "salary", "startDate") VALUES ('', '', '', '0', '08/04/2019'); args=['', '', '', '0', '08/04/2019']
+"POST /empweb/create_user/ HTTP/1.1" 200 3252
+"GET /static/img/buisnessman.png HTTP/1.1" 304 0
+(0.001) INSERT INTO "empweb_employee" ("employee_name", "username", "password", "salary", "startDate") VALUES ('', '', '', '0', '08/04/2019'); args=['', '', '', '0', '08/04/2019']
+"POST /empweb/create_user/ HTTP/1.1" 200 3252
+"GET /register/?csrfmiddlewaretoken=XOhTIHzA9CAn9fIoqMntr2ei0qlvdUGE5Mc2F1CtiUkmkXszNynbohmE59FU11bj HTTP/1.1" 200 3741
+"GET /empweb/ HTTP/1.1" 200 1961
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/img/mbr.jpg HTTP/1.1" 304 0
+(0.001) INSERT INTO "empweb_employee" ("employee_name", "username", "password", "salary", "startDate") VALUES ('', '', '', '0', '08/04/2019'); args=['', '', '', '0', '08/04/2019']
+"POST /empweb/create_user/ HTTP/1.1" 200 3252
+"GET /register/?csrfmiddlewaretoken=2MEtkDtRod2g6sDMhVZYfCCmhZSIUwDJaKzChXwKxvMfhanXEHZGcRKImIc7ID8o HTTP/1.1" 200 3741
+(0.001) INSERT INTO "empweb_employee" ("employee_name", "username", "password", "salary", "startDate") VALUES ('', '', '', '0', '08/04/2019'); args=['', '', '', '0', '08/04/2019']
+"POST /empweb/create_user/ HTTP/1.1" 200 3252
+(0.001) INSERT INTO "empweb_employee" ("employee_name", "username", "password", "salary", "startDate") VALUES ('', '', '', '0', '08/04/2019'); args=['', '', '', '0', '08/04/2019']
+"POST /empweb/create_user/ HTTP/1.1" 200 3252
+"GET /empweb/ HTTP/1.1" 200 1961
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/img/mbr.jpg HTTP/1.1" 304 0
+(0.001) INSERT INTO "empweb_employee" ("employee_name", "username", "password", "salary", "startDate") VALUES ('', '', '', '0', '08/04/2019'); args=['', '', '', '0', '08/04/2019']
+"POST /empweb/create_user/ HTTP/1.1" 200 3252
+"GET /register/?csrfmiddlewaretoken=rnvH6D3TNLpltbbTG9iSEWFxrrj5blpzzlqQ3X6MW39kETV43ViABbNTwaDuZsUe HTTP/1.1" 200 3741
+(0.027) INSERT INTO "mbrweb_mbrdetails" ("mortID", "username", "password", "name", "address", "number", "emp_details", "status") VALUES ('ixbpxkzfvvcu', 'test4', 'test4', 'test4', 'test4', '123', 'test4', 'pending'); args=['ixbpxkzfvvcu', 'test4', 'test4', 'test4', 'test4', '123', 'test4', 'pending']
+(0.000) SELECT "mbrweb_mbrdetails"."id", "mbrweb_mbrdetails"."mortID", "mbrweb_mbrdetails"."username", "mbrweb_mbrdetails"."password", "mbrweb_mbrdetails"."name", "mbrweb_mbrdetails"."address", "mbrweb_mbrdetails"."number", "mbrweb_mbrdetails"."emp_details", "mbrweb_mbrdetails"."status" FROM "mbrweb_mbrdetails"  LIMIT 21; args=()
+(0.000) SELECT "mbrweb_mbrdetails"."id", "mbrweb_mbrdetails"."mortID", "mbrweb_mbrdetails"."username", "mbrweb_mbrdetails"."password", "mbrweb_mbrdetails"."name", "mbrweb_mbrdetails"."address", "mbrweb_mbrdetails"."number", "mbrweb_mbrdetails"."emp_details", "mbrweb_mbrdetails"."status" FROM "mbrweb_mbrdetails" WHERE "mbrweb_mbrdetails"."mortID" = 'ixbpxkzfvvcu'; args=('ixbpxkzfvvcu',)
+"POST /mbr_confirmation/ HTTP/1.1" 200 1990
+"GET / HTTP/1.1" 200 1943
+(0.001) SELECT "mbrweb_mbrdetails"."id", "mbrweb_mbrdetails"."mortID", "mbrweb_mbrdetails"."username", "mbrweb_mbrdetails"."password", "mbrweb_mbrdetails"."name", "mbrweb_mbrdetails"."address", "mbrweb_mbrdetails"."number", "mbrweb_mbrdetails"."emp_details", "mbrweb_mbrdetails"."status" FROM "mbrweb_mbrdetails" WHERE "mbrweb_mbrdetails"."username" = ''; args=('',)
+"POST /login/ HTTP/1.1" 200 1877
+"GET /empweb/ HTTP/1.1" 200 1961
+"GET /register/?csrfmiddlewaretoken=ABssz82cljFfcGmrC1boG6V410zeQM43IznBws55uBpeno6CZNb6Dl3q6JTDETzI HTTP/1.1" 200 3741
+"GET /empweb/ HTTP/1.1" 200 1961
+(0.001) INSERT INTO "empweb_employee" ("employee_name", "username", "password", "salary", "startDate") VALUES ('', '', '', '0', '08/04/2019'); args=['', '', '', '0', '08/04/2019']
+"POST /empweb/create_user/ HTTP/1.1" 200 3252
+File /code/empweb/urls.py. is_changed: False, is_new: True
+File /code/empweb/urls.py previous mtime: None, current mtime: 1554872278.4689462
+/code/empweb/urls.py notified as changed. Signal results: [(<function translation_file_changed at 0x7f656517a048>, None)].
+/code/empweb/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /code/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /code/empweb/locale with glob **/*.mo.
+Watching dir /code/mbrweb/locale with glob **/*.mo.
+Watching dir /code/reweb/locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+File /code/empweb/urls.py. is_changed: False, is_new: True
+File /code/empweb/urls.py previous mtime: None, current mtime: 1554872330.804584
+/code/empweb/urls.py notified as changed. Signal results: [(<function translation_file_changed at 0x7fcc31a1a048>, None)].
+/code/empweb/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /code/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /code/empweb/locale with glob **/*.mo.
+Watching dir /code/mbrweb/locale with glob **/*.mo.
+Watching dir /code/reweb/locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /code/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /code/empweb/locale with glob **/*.mo.
+Watching dir /code/mbrweb/locale with glob **/*.mo.
+Watching dir /code/reweb/locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /empweb/ HTTP/1.1" 200 1980
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'login/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern ''>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'mort_id/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'create_user/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'confirmation/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'empweb/create_users/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'login/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern ''>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'mort_id/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'create_user/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'confirmation/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'empweb/create_users/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'login/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern ''>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'mort_id/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'create_user/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'confirmation/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'empweb/create_users/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 100, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 558, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'login/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern ''>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'mort_id/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'create_user/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>, <URLPattern 'confirmation/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'empweb/create_users/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Not Found: /empweb/create_users/
+"GET /empweb/create_users/?csrfmiddlewaretoken=n6ChNEa2X9ehuJjGRmDc0eYtHppFXIOXv4xqKYdV6rYgFr3Re8DUXt6PM8J4LPjC HTTP/1.1" 404 4091
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+(0.000) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee" WHERE "empweb_employee"."username" = ''; args=('',)
+"POST /empweb/login/ HTTP/1.1" 200 2778
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/jquery-3.3.1.min.js HTTP/1.1" 304 0
+"GET /static/popper.min.js HTTP/1.1" 304 0
+"GET /static/bootstrap4/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/img/buisnessman.png HTTP/1.1" 304 0
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+"GET /empweb/login/ HTTP/1.1" 200 1875
+(0.000) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+(0.000) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee" WHERE "empweb_employee"."username" = ''; args=('',)
+"POST /empweb/login/ HTTP/1.1" 200 2778
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /code/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/admin/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/auth/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/contenttypes/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/sessions/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/messages/locale with glob **/*.mo.
+Watching dir /usr/local/lib/python3.7/site-packages/django/contrib/staticfiles/locale with glob **/*.mo.
+Watching dir /code/empweb/locale with glob **/*.mo.
+Watching dir /code/mbrweb/locale with glob **/*.mo.
+Watching dir /code/reweb/locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /empweb/ HTTP/1.1" 200 1982
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/img/mbr.jpg HTTP/1.1" 304 0
+"GET /empweb/create_user/?csrfmiddlewaretoken=Jiz0W1IO5NGHgZabcctrby8oSRIry90JRgu9TlLHe5qGrHUmzYt98NgKXA2Qmgvo HTTP/1.1" 200 3252
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+"GET /empweb/login/?csrfmiddlewaretoken=Jiz0W1IO5NGHgZabcctrby8oSRIry90JRgu9TlLHe5qGrHUmzYt98NgKXA2Qmgvo HTTP/1.1" 200 1875
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+(0.000) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee" WHERE "empweb_employee"."username" = 'test3'; args=('test3',)
+"POST /empweb/login/?csrfmiddlewaretoken=Jiz0W1IO5NGHgZabcctrby8oSRIry90JRgu9TlLHe5qGrHUmzYt98NgKXA2Qmgvo HTTP/1.1" 200 2778
+"GET /empweb/create_user/?csrfmiddlewaretoken=Jiz0W1IO5NGHgZabcctrby8oSRIry90JRgu9TlLHe5qGrHUmzYt98NgKXA2Qmgvo HTTP/1.1" 200 3252
+(0.025) INSERT INTO "empweb_employee" ("employee_name", "username", "password", "salary", "startDate") VALUES ('test6', 'test6', 'test6', 'test6', 'test6'); args=['test6', 'test6', 'test6', 'test6', 'test6']
+(0.001) SELECT "empweb_employee"."id", "empweb_employee"."employee_name", "empweb_employee"."username", "empweb_employee"."password", "empweb_employee"."salary", "empweb_employee"."startDate" FROM "empweb_employee"  LIMIT 21; args=()
+"POST /empweb/create_user/?csrfmiddlewaretoken=Jiz0W1IO5NGHgZabcctrby8oSRIry90JRgu9TlLHe5qGrHUmzYt98NgKXA2Qmgvo HTTP/1.1" 200 1875
+>>>>>>> c750b4f24a5f00b4ca50e1433d8cd7a281b9d28d

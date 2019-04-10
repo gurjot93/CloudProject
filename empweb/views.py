@@ -1,5 +1,9 @@
 from django.shortcuts import render
 from .models import Employee
+from mbrweb.models import MbrDetails
+
+def home(request):
+    return render(request,'home_emp.html')
 
 # Create your views here.
 def index(request):
@@ -50,4 +54,10 @@ def create_user(request):
     return render(request,page)
 
 def confirmation(request):
+    mortID = request.POST.get('mortID','')
+    mbrUser = MbrDetails.objects.get(mortID=mortID)
+    MbrDetails.objects.filter(mortID=mortID).update(status="Complete")
+    print(mbrUser.status)
+    print("This is the MBRUser: " + mbrUser.address)
+    print(request.POST)
     return render(request,'confirmation.html')
