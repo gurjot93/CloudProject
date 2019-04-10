@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Real Estate Portal</title>
+	<link rel="stylesheet" href= "{% static 'bootstrap4/css/bootstrap.min.css' %}"></link>
+    <script type="text/javascript" src="{% static 'popper.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'jquery-3.3.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'bootstrap4/js/bootstrap.min.js' %} "></script>
+	<link href=" {% static 'css/style.css' %}" rel="stylesheet"></link>
+</head>
+<body class="login-body">
+    <div class="modal-dialog text-center">
+        <div class="col-sm-8 main-section">
+            <div class="modal-content">
+                <div class="col-12 dalLogo">
+                    <img src="{% static 'img/realEstateBroker.jpg' %}" alt="Logo"width="150" height="150">
+                </div>
+                <form class="col-12" action="/reweb/" method="POST">
+                    {% csrf_token %}
+                    <h1 class=standouttext>
+                        Information has been sent to MBR!
+                    </h1> 
+                    <button type="submit" class="btn login-button" value="/success" > <i class="fas fa-sign-in-alt"></i>Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

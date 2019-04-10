@@ -24,7 +24,11 @@ def mortId(request):
           realEstateUser= RealEstate(
               name=name,
               mortID=mortID)
+          page='reweb_confirmation.html'
           print("Saving New User into RealEstate DB")
      return render(request,page)
+
+def re_confirmation(request):
+  return render(request,'reweb_confirmation.html')
 
           
