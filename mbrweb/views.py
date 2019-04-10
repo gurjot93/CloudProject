@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from .models import MbrDetails
+import random
+import string
 
 
 # Create your views here.
@@ -8,27 +10,33 @@ def home(request):
 
 def register(request):
 	page='register.html'
+	return render(request,page)
+
+def confirmation(request):
 	if request.method == "POST":
-		print('No User found;creating a new user')
+		username=request.POST.get('username','')
+		password= request.POST.get('password','')
 		name= request.POST.get('name','')
 		address=request.POST.get('address','')
 		number=request.POST.get('number','')
 		emp_details=request.POST.get('emp_details','')
-		status=request.POST.get('status','')
 		mbrUser= MbrDetails(
+			mortID=(createMortID()),
+			username=username,
+			password=password,
 			name= name,
    			address = address,
    			number =number,
-   			emp_details = emp_details,
-			status=status)
+   			emp_details = emp_details,)
 		print("Saving New User into MbrDetails DB")
+		print(request.POST)
 		mbrUser.save()
 		mbrUsers =MbrDetails.objects.all()
 		print(mbrUsers)
 		print(request.POST)
-	return render(request,page)
-
-def confirmation(request):
+	##mbrUser = MbrDetails.objects.get(username=username)
+	##print(mbrUser.mortID)
+	##context ={'mbrUser':mbrUser}
 	return render(request,'mbr_confirmation.html')
 
 def formdetails(request):
@@ -60,3 +68,7 @@ def login(request):
 				print('No User found')
 
 	return render(request,page)
+
+def createMortID():
+	letters = string.ascii_lowercase.join(string.ascii_uppercase)
+	return ''.join(random.choice(letters) for i in range(12))

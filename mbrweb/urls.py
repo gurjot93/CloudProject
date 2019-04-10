@@ -23,7 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home),
     path('register/',views.register),
-    path('confirmation/',views.confirmation),
+    path('mbr_confirmation/',views.confirmation),
     path('formdetails/',views.formdetails),
     path('login/',views.login),
 ]

@@ -2,12 +2,13 @@ from django.db import models
 
 # Create your models here.
 class MbrDetails(models.Model):
-   mortID =models.AutoField(primary_key=True)
+   mortID =models.CharField(max_length=100,unique=True)
    username =models.CharField(max_length=100,unique=True)
-   name= models.CharField(max_length=100)
-   address = models.CharField(max_length=100)
-   number = models.CharField(max_length=100)
-   emp_details = models.CharField(max_length=100)
+   password =models.CharField(max_length=100,default='test')
+   name= models.CharField(max_length=100,default='test')
+   address = models.CharField(max_length=100,default='test')
+   number = models.CharField(max_length=100,default='test')
+   emp_details = models.CharField(max_length=100,default='test')
    status = models.CharField(max_length=100,default='pending')
 
 def __str__(self):
