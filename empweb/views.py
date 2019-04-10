@@ -1,6 +1,9 @@
 from django.shortcuts import render
 from .models import Employee
 
+def home(request):
+    return render(request,'home_emp.html')
+
 # Create your views here.
 def index(request):
     page='login.html'
