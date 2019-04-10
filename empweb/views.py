@@ -32,6 +32,21 @@ def mortId(request):
 def create_user(request):
 ##Add a User
     page='emp_create_user.html'
+    
+    return render(request,page)
+
+def confirmation(request):
+    mortID = request.POST.get('mortID','')
+    print("This is the mortID: "+mortID)
+    mbrUser = MbrDetails.objects.get(mortID=mortID)
+    MbrDetails.objects.filter(mortID=mortID).update(status="Complete")
+    print(mbrUser.status)
+    print("This is the MBRUser: " + mbrUser.address)
+    print(request.POST)
+    return render(request,'confirmation.html')
+
+
+def employee_creation_confirmation(request):
     if request.method == "POST":
         employee_name= request.POST.get('name','')
         startDate=request.POST.get('startDate','08/04/2019')
@@ -44,20 +59,11 @@ def create_user(request):
             password=password,
             salary=salary,
             startDate=startDate)
-    try:
-        employee.save()
-        employees =Employee.objects.all()
-        print(employees)
-        page='login.html'
-    except Exception:
-        print("Unable to Create Employee")
-    return render(request,page)
-
-def confirmation(request):
-    mortID = request.POST.get('mortID','')
-    mbrUser = MbrDetails.objects.get(mortID=mortID)
-    MbrDetails.objects.filter(mortID=mortID).update(status="Complete")
-    print(mbrUser.status)
-    print("This is the MBRUser: " + mbrUser.address)
-    print(request.POST)
-    return render(request,'confirmation.html')
+        try:
+            employee.save()
+            employees =Employee.objects.all()
+            print(employees)
+            page='login.html'
+        except Exception:
+            print("Unable to Create Employee")
+    return render(request,'employee_created_confirmation.html')
