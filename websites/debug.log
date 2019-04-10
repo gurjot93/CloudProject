@@ -8810,3 +8810,596 @@ CREATE TABLE "mbrweb_mbrdetails" ("id" serial NOT NULL PRIMARY KEY, "mortID" var
                 AND pg_catalog.pg_table_is_visible(c.oid); args=None
 CREATE TABLE "mbrweb_mbrdetails" ("id" serial NOT NULL PRIMARY KEY, "mortID" varchar(100) NOT NULL UNIQUE, "username" varchar(100) NOT NULL UNIQUE, "password" varchar(100) NOT NULL, "name" varchar(100) NOT NULL, "address" varchar(100) NOT NULL, "number" varchar(100) NOT NULL, "emp_details" varchar(100) NOT NULL, "status" varchar(100) NOT NULL); (params None)
 (0.005) CREATE TABLE "mbrweb_mbrdetails" ("id" serial NOT NULL PRIMARY KEY, "mortID" varchar(100) NOT NULL UNIQUE, "username" varchar(100) NOT NULL UNIQUE, "password" varchar(100) NOT NULL, "name" varchar(100) NOT NULL, "address" varchar(100) NOT NULL, "number" varchar(100) NOT NULL, "emp_details" varchar(100) NOT NULL, "status" varchar(100) NOT NULL); args=None
+(0.012) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET / HTTP/1.1" 200 1943
+"GET /static/bootstrap4/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/img/mbr.jpg HTTP/1.1" 304 0
+"GET /static/css/style.css HTTP/1.1" 304 0
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3124
+"GET /register/?csrfmiddlewaretoken=PhCTY8KoxyFRjw7905gn5neU6ftaarSl1lxhfGgEXpjU2QRuFlI5RC1OY4yHKzyy HTTP/1.1" 200 3741
+(0.004) INSERT INTO "mbrweb_mbrdetails" ("mortID", "username", "password", "name", "address", "number", "emp_details", "status") VALUES ('cWhfagyPcrsl', 'test', 'test', 'test', 'test', 'test', 'test', 'pending') RETURNING "mbrweb_mbrdetails"."id"; args=('cWhfagyPcrsl', 'test', 'test', 'test', 'test', 'test', 'test', 'pending')
+(0.002) SELECT "mbrweb_mbrdetails"."id", "mbrweb_mbrdetails"."mortID", "mbrweb_mbrdetails"."username", "mbrweb_mbrdetails"."password", "mbrweb_mbrdetails"."name", "mbrweb_mbrdetails"."address", "mbrweb_mbrdetails"."number", "mbrweb_mbrdetails"."emp_details", "mbrweb_mbrdetails"."status" FROM "mbrweb_mbrdetails"  LIMIT 21; args=()
+Internal Server Error: /mbr_confirmation/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.ProgrammingError: column "mortID" of relation "mbrweb_mbrdetails" does not exist
+LINE 1: INSERT INTO "mbrweb_mbrdetails" ("mortID", "username", "pass...
+                                         ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/mbrweb/views.py", line 33, in confirmation
+    mbrUser.save()
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/base.py", line 718, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/base.py", line 748, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/base.py", line 831, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/base.py", line 869, in _do_insert
+    using=using, raw=raw)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 1136, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1289, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column "mortID" of relation "mbrweb_mbrdetails" does not exist
+LINE 1: INSERT INTO "mbrweb_mbrdetails" ("mortID", "username", "pass...
+                                         ^
+
+"POST /mbr_confirmation/ HTTP/1.1" 500 136876
+(0.002) INSERT INTO "mbrweb_mbrdetails" ("mortID", "username", "password", "name", "address", "number", "emp_details", "status") VALUES ('nfmycmfiwtTq', 'test1', 'test1', '1', 'test1', '1', '1', 'pending') RETURNING "mbrweb_mbrdetails"."id"; args=('nfmycmfiwtTq', 'test1', 'test1', '1', 'test1', '1', '1', 'pending')
+(0.003) SELECT "mbrweb_mbrdetails"."id", "mbrweb_mbrdetails"."mortID", "mbrweb_mbrdetails"."username", "mbrweb_mbrdetails"."password", "mbrweb_mbrdetails"."name", "mbrweb_mbrdetails"."address", "mbrweb_mbrdetails"."number", "mbrweb_mbrdetails"."emp_details", "mbrweb_mbrdetails"."status" FROM "mbrweb_mbrdetails"  LIMIT 21; args=()
+Internal Server Error: /mbr_confirmation/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.ProgrammingError: column "mortID" of relation "mbrweb_mbrdetails" does not exist
+LINE 1: INSERT INTO "mbrweb_mbrdetails" ("mortID", "username", "pass...
+                                         ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/mbrweb/views.py", line 33, in confirmation
+    mbrUser.save()
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/base.py", line 718, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/base.py", line 748, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/base.py", line 831, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/base.py", line 869, in _do_insert
+    using=using, raw=raw)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 1136, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1289, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column "mortID" of relation "mbrweb_mbrdetails" does not exist
+LINE 1: INSERT INTO "mbrweb_mbrdetails" ("mortID", "username", "pass...
+                                         ^
+
+"POST /mbr_confirmation/ HTTP/1.1" 500 136816
+(0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) PRAGMA foreign_keys = OFF; args=None
+(0.000) PRAGMA foreign_keys; args=None
+(0.000) PRAGMA legacy_alter_table = ON; args=None
+(0.000) BEGIN; args=None
+CREATE TABLE "django_migrations" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" datetime NOT NULL); (params None)
+(0.003) CREATE TABLE "django_migrations" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" datetime NOT NULL); args=None
+(0.000) PRAGMA legacy_alter_table = OFF; args=None
+(0.000) PRAGMA foreign_keys = ON; args=None
+(0.000) PRAGMA foreign_keys = OFF; args=None
+(0.000) PRAGMA foreign_keys; args=None
+(0.000) PRAGMA legacy_alter_table = ON; args=None
+(0.000) BEGIN; args=None
+CREATE TABLE "mbrweb_mbrdetails" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "mortID" varchar(100) NOT NULL UNIQUE, "username" varchar(100) NOT NULL UNIQUE, "password" varchar(100) NOT NULL, "name" varchar(100) NOT NULL, "address" varchar(100) NOT NULL, "number" varchar(100) NOT NULL, "emp_details" varchar(100) NOT NULL, "status" varchar(100) NOT NULL); (params None)
+(0.006) CREATE TABLE "mbrweb_mbrdetails" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "mortID" varchar(100) NOT NULL UNIQUE, "username" varchar(100) NOT NULL UNIQUE, "password" varchar(100) NOT NULL, "name" varchar(100) NOT NULL, "address" varchar(100) NOT NULL, "number" varchar(100) NOT NULL, "emp_details" varchar(100) NOT NULL, "status" varchar(100) NOT NULL); args=None
+(0.000) PRAGMA legacy_alter_table = OFF; args=None
+(0.000) PRAGMA foreign_keys = ON; args=None
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) BEGIN; args=None
+(0.007) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('mbrweb', '0001_initial', '2019-04-10 00:23:24.886206'); args=['mbrweb', '0001_initial', '2019-04-10 00:23:24.886206']
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET / HTTP/1.1" 200 1943
+"GET /register/?csrfmiddlewaretoken=rzzgwwVXnSPblQJ2b3PawRor5V4I4QXSDDuEN4rdNJte4atnQjhSi6blXK9fEYD5 HTTP/1.1" 200 3741
+(0.000) BEGIN; args=None
+(0.023) INSERT INTO "mbrweb_mbrdetails" ("mortID", "username", "password", "name", "address", "number", "emp_details", "status") VALUES ('vtjmimjbroxg', 'test', 'test', 'test', 'test', 'test', 'test', 'pending'); args=['vtjmimjbroxg', 'test', 'test', 'test', 'test', 'test', 'test', 'pending']
+(0.003) SELECT "mbrweb_mbrdetails"."id", "mbrweb_mbrdetails"."mortID", "mbrweb_mbrdetails"."username", "mbrweb_mbrdetails"."password", "mbrweb_mbrdetails"."name", "mbrweb_mbrdetails"."address", "mbrweb_mbrdetails"."number", "mbrweb_mbrdetails"."emp_details", "mbrweb_mbrdetails"."status" FROM "mbrweb_mbrdetails"  LIMIT 21; args=()
+"POST /mbr_confirmation/ HTTP/1.1" 200 1969
+"GET / HTTP/1.1" 200 1943
+(0.005) SELECT "mbrweb_mbrdetails"."id", "mbrweb_mbrdetails"."mortID", "mbrweb_mbrdetails"."username", "mbrweb_mbrdetails"."password", "mbrweb_mbrdetails"."name", "mbrweb_mbrdetails"."address", "mbrweb_mbrdetails"."number", "mbrweb_mbrdetails"."emp_details", "mbrweb_mbrdetails"."status" FROM "mbrweb_mbrdetails" WHERE "mbrweb_mbrdetails"."username" = ''; args=('',)
+"POST /login/ HTTP/1.1" 200 1883
+(0.003) SELECT "mbrweb_mbrdetails"."id", "mbrweb_mbrdetails"."mortID", "mbrweb_mbrdetails"."username", "mbrweb_mbrdetails"."password", "mbrweb_mbrdetails"."name", "mbrweb_mbrdetails"."address", "mbrweb_mbrdetails"."number", "mbrweb_mbrdetails"."emp_details", "mbrweb_mbrdetails"."status" FROM "mbrweb_mbrdetails"  LIMIT 21; args=()
+Exception while resolving variable 'mbrUser' in template 'formdetails.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'mbrUser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'mbrUser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'mbrUser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [mbrUser] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'QAfuHi69FFdlP9Aom19PtAfSmAYfZL5V2EaSYQCp5wRoytkJ1hBxfP2Mep3MzTL8'>, 'request': <WSGIRequest: POST '/formdetails/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7f38c04e2bf8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f38c0497278>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f38c04976a0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}]
+Exception while resolving variable 'mbrUser' in template 'formdetails.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'mbrUser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'mbrUser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'mbrUser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [mbrUser] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'QAfuHi69FFdlP9Aom19PtAfSmAYfZL5V2EaSYQCp5wRoytkJ1hBxfP2Mep3MzTL8'>, 'request': <WSGIRequest: POST '/formdetails/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7f38c04e2bf8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f38c0497278>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f38c04976a0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}]
+Exception while resolving variable 'mbrUser' in template 'formdetails.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'mbrUser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'mbrUser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'mbrUser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [mbrUser] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'QAfuHi69FFdlP9Aom19PtAfSmAYfZL5V2EaSYQCp5wRoytkJ1hBxfP2Mep3MzTL8'>, 'request': <WSGIRequest: POST '/formdetails/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7f38c04e2bf8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f38c0497278>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f38c04976a0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}]
+Exception while resolving variable 'mbrUser' in template 'formdetails.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'mbrUser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'mbrUser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'mbrUser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [mbrUser] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'QAfuHi69FFdlP9Aom19PtAfSmAYfZL5V2EaSYQCp5wRoytkJ1hBxfP2Mep3MzTL8'>, 'request': <WSGIRequest: POST '/formdetails/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7f38c04e2bf8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f38c0497278>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f38c04976a0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}]
+"POST /formdetails/ HTTP/1.1" 200 3599
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'empweb.urls' from '/code/empweb/urls.py'> (None:None) 'empweb/'>], [<URLResolver <module 'reweb.urls' from '/code/reweb/urls.py'> (None:None) 'reweb/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern ''>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'register/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'mbr_confirmation/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'formdetails/'>], [<URLResolver <module 'mbrweb.urls' from '/code/mbrweb/urls.py'> (None:None) ''>, <URLPattern 'login/'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3124
