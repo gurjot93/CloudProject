@@ -27,7 +27,7 @@ def mortId(request):
 
 def create_user(request):
 ##Add a User
-    page='login.html'
+    page='emp_create_user.html'
     if request.method == "POST":
         employee_name= request.POST.get('name','')
         startDate=request.POST.get('startDate','08/04/2019')
@@ -40,11 +40,13 @@ def create_user(request):
             password=password,
             salary=salary,
             startDate=startDate)
+    try:
         employee.save()
         employees =Employee.objects.all()
         print(employees)
-    else:
-        page='emp_create_user.html'
+        page='login.html'
+    except Exception:
+        print("Unable to Create Employee")
     return render(request,page)
 
 def confirmation(request):

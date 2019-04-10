@@ -20,35 +20,41 @@
                 </div>
                 <form class="col-12" action="/" method="POST">
                     {% csrf_token %}
+                    <h4 class="standouttext">Mort Id</h4>
+                    <div class="form-group">
+                        <!--Bootstrap Tooltips. (2019). Retrieved from https://getbootstrap.com/docs/4.1/components/tooltips/-->
+                        <input name="mortID" class="form-control" placeholder="MortID" id="name" value={{mbrUser.mortID}}
+                        required  data-toggle="tooltip" data-placement="bottom" title="Enter a valid name">
+                    </div>
                     <h4 class="standouttext">Name</h4>
                     <div class="form-group">
                         <!--Bootstrap Tooltips. (2019). Retrieved from https://getbootstrap.com/docs/4.1/components/tooltips/-->
-                        <input name="name" class="form-control" placeholder="Name" id="name"
-                        required  data-toggle="tooltip" data-placement="bottom" title="Enter a valid name">{{mbrUser.name}}
+                        <input name="name" class="form-control" placeholder="Name" id="name" value={{mbrUser.name}}
+                        required  data-toggle="tooltip" data-placement="bottom" title="Enter a valid name">
                     </div>
                     <h4 class="standouttext">Address</h4>
                     <div class="form-group">
                         <!--Bootstrap Tooltips. (2019). Retrieved from https://getbootstrap.com/docs/4.1/components/tooltips/-->
                         <textarea rows="5" cols="50" input name="address" class="form-control" placeholder="Address" id="address"
-                        required  data-toggle="tooltip" data-placement="bottom" title="Enter a valid Address">{{mbrUser.address}}</textarea>
+                        required  data-toggle="tooltip" data-placement="bottom" title="Enter a valid Address"> {{mbrUser.address}}</textarea>
                     </div>
                     <h4 class="standouttext">Phone Number</h4>
                     <div class="form-group">
                         <!--Bootstrap Tooltips. (2019). Retrieved from https://getbootstrap.com/docs/4.1/components/tooltips/-->
-                        <input name="number" class="form-control" placeholder="Phone Number" id="number"
-                        required  data-toggle="tooltip" data-placement="bottom" title="Enter a valid number">{{mbrUser.number}}</input>
+                        <input name="number" class="form-control" placeholder="Phone Number" id="number" value={{mbrUser.number}}
+                        required  data-toggle="tooltip" data-placement="bottom" title="Enter a valid number"></input>
                     </div>
                     <h4 class="standouttext">Employee Details</h4>
 					<div class="form-group">
                         <!--Bootstrap Tooltips. (2019). Retrieved from https://getbootstrap.com/docs/4.1/components/tooltips/-->
-                        <input name="employee" class="form-control" placeholder="Employee Details" id="employee"
-                        required  data-toggle="tooltip" data-placement="bottom" title="Enter valid details">{{mbrUser.employee}}
+                        <input name="employee" class="form-control" placeholder="Employee Details" id="employee" value={{mbrUser.emp_details}}
+                        required  data-toggle="tooltip" data-placement="bottom" title="Enter valid details">
                     </div>
                     <h4 class="standouttext">Application Status</h4>
                     <div class="form-group">
                         <!--Bootstrap Tooltips. (2019). Retrieved from https://getbootstrap.com/docs/4.1/components/tooltips/-->
-                        <input name="status" class="form-control" placeholder="Application Status" id="status"
-                        required  data-toggle="tooltip" data-placement="bottom" title="Enter valid details">In Progress
+                        <input name="status" class="form-control" placeholder="Application Status" id="status" value={{mbrUser.status}}
+                        required  data-toggle="tooltip" data-placement="bottom" title="Enter valid details">
                     </div>
                     <button type="submit" class="btn login-button" value="/success" > <i class="fas fa-sign-in-alt"></i>Home</button>
                 </form>

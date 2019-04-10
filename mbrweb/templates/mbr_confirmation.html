@@ -28,7 +28,7 @@
                     {% csrf_token %}
 					<div class="form-group">
                          <!--Bootstrap Tooltips. (2019). Retrieved from https://getbootstrap.com/docs/4.1/components/tooltips/-->
-                         <input id='mortID' type="mortID" class="form-control" placeholder="MortID"  required  data-toggle="tooltip" data-placement="bottom" title="Enter in valid data">
+                         <input value= {{mbrUser.mortID}} id='mortID' type="mortID" class="form-control" placeholder="MortID"  required  data-toggle="tooltip" data-placement="bottom" title="Enter in valid data">
                     </div>
                     <!-- Bootstrap Cards. (2019). Retrieved from https://getbootstrap.com/docs/4.0/components/forms/-->
  

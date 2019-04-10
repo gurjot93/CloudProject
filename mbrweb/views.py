@@ -20,8 +20,9 @@ def confirmation(request):
 		address=request.POST.get('address','')
 		number=request.POST.get('number','')
 		emp_details=request.POST.get('emp_details','')
+		mortID=createMortID()
 		mbrUser= MbrDetails(
-			mortID=(createMortID()),
+			mortID=(mortID),
 			username=username,
 			password=password,
 			name= name,
@@ -30,44 +31,39 @@ def confirmation(request):
    			emp_details = emp_details,)
 		print("Saving New User into MbrDetails DB")
 		print(request.POST)
-		mbrUser.save()
-		mbrUsers =MbrDetails.objects.all()
-		print(mbrUsers)
+		try:
+			mbrUser.save()
+			mbrUsers =MbrDetails.objects.all()
+			print(mbrUsers)
+			mbrUser = MbrDetails.objects.get(mortID=mortID)
+			print(mbrUser.mortID)
+			context ={'mbrUser':mbrUser}
+		except Exception:
+			context ={'mbrUser':'noUser'}
+			print("Unable to save the MBRUser")
 		print(request.POST)
-	##mbrUser = MbrDetails.objects.get(username=username)
-	##print(mbrUser.mortID)
-	##context ={'mbrUser':mbrUser}
-	return render(request,'mbr_confirmation.html')
+	return render(request,'mbr_confirmation.html',context)
 
 def formdetails(request):
-	try:
-		mbrUsers =MbrDetails.objects.all()
-		##print("This is the name: " +mbrUsers[1].name)
-		print(mbrUsers)
-		##mbrUser = MbrDetails.objects.get(address='test')
-		##context ={'mbrUser':mbrUser}
-	except Exception:
-		print("Error getting MBRUsers")
-	return render(request,'formdetails.html')
-	##return render(request,'formdetails.html',context)
+	return render(request,'formdetails.html',context)
 
 def login(request):
 	page='login_mbr.html'
-
+	context={'NoUser':'NoUser'}
 	if request.method == "POST":
         ##Make sure a user exist
 		try:
-			employee =MbrDetails.objects.get(username=request.POST.get('username',''))
-			print(employee.password)
+			mbrUser =MbrDetails.objects.get(username=request.POST.get('username',''))
 			##Does the password match the user's password
-			if(request.POST.get('password','') ==employee.password ):
+			if(request.POST.get('password','') ==mbrUser.password ):
+				print("User found and Logging In")
 				page ='formdetails.html'
+				context ={'mbrUser':mbrUser}
 			else:
 				print("Invalid Login attemp")
 		except Exception:
 				print('No User found')
-
-	return render(request,page)
+	return render(request,page,context)
 
 def createMortID():
 	letters = string.ascii_lowercase.join(string.ascii_uppercase)
