@@ -8,7 +8,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Real Estate Portal</title>
 	<link rel="stylesheet" href= "{% static 'bootstrap4/css/bootstrap.min.css' %}"></link>
-	<link src="{% static 'bootstrap4/js/bootstrap.min.js' %} "></link>
+    <script type="text/javascript" src="{% static 'popper.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'jquery-3.3.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'bootstrap4/js/bootstrap.min.js' %} "></script>
 	<link href=" {% static 'css/style.css' %}" rel="stylesheet"></link>
 </head>
 <body class="login-body">
@@ -18,18 +20,11 @@
                 <div class="col-12 dalLogo">
                     <img src="{% static 'img/realEstateBroker.jpg' %}" alt="Logo"width="150" height="150">
                 </div>
-                <form class="col-12" action="/real_estate/" method="POST">
+                <form class="col-12" action="/reweb/" method="POST">
                     {% csrf_token %}
-                    <div class="form-group">
-                        <!--Bootstrap Tooltips. (2019). Retrieved from https://getbootstrap.com/docs/4.1/components/tooltips/-->
-                        <input name="username" class="form-control" placeholder="Username" id="username"
-                        required  data-toggle="tooltip" data-placement="bottom" title="Enter a valid username">
-                    </div>
-					<div class="form-group">
-					<!--<label for="comment">Comment:</label> -->
-						<input class="form-control" rows="4" id="password" placeholder="Password"
-						required data-toggle="tooltip" data-placement="bottom" title="Enter a valid Password"></input>
-					</div>
+                    <h1 class=standouttext>
+                        Information has been sent to MBR!
+                    </h1> 
                     <button type="submit" class="btn login-button" value="/success" > <i class="fas fa-sign-in-alt"></i>Submit</button>
                 </form>
             </div>

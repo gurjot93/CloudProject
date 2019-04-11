@@ -77,15 +77,11 @@ WSGI_APPLICATION = 'websites.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'HOST': 'db',
-        'PORT': 5432,
-    }
+   'default': {
+       'ENGINE': 'django.db.backends.sqlite3',
+       'NAME': 'mydatabase',
+   }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
@@ -128,3 +124,23 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS =[
     os.path.join(os.path.dirname(__file__),"static")
 ]
+
+#"Logging | Django documentation | Django", Docs.djangoproject.com, 2019. [Online]. Available: https://docs.djangoproject.com/en/2.2/topics/logging/. [Accessed: 04- Apr- 2019]
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'websites/debug.log',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}

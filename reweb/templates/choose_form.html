@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>EMP Portal</title>
-    <link rel="stylesheet" href= "{% static 'bootstrap4/css/bootstrap.min.css' %}"></link>
+	<title>Real Estate Portal</title>
+	<link rel="stylesheet" href= "{% static 'bootstrap4/css/bootstrap.min.css' %}"></link>
     <script type="text/javascript" src="{% static 'popper.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'jquery-3.3.1.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'bootstrap4/js/bootstrap.min.js' %} "></script>
@@ -20,14 +20,8 @@
                 <div class="col-12 dalLogo">
                     <img src="{% static 'img/realEstateBroker.jpg' %}" alt="Logo"width="150" height="150">
                 </div>
-                <h1 class="standouttext">
-                   Welcome!
-                </h1>
-                <form class="col-12" method="POST">
-					<div class="form-group">
-                         <!--Bootstrap Tooltips. (2019). Retrieved from https://getbootstrap.com/docs/4.1/components/tooltips/-->
-                         <input id='mortID' type="mortID" class="form-control" placeholder="MortID"  required  data-toggle="tooltip" data-placement="bottom" title="Enter in valid data">
-                    </div>
+                <form class="col-12" action="/real_estate/" method="POST">
+                    {% csrf_token %}
                     <div class="form-group">
                         <!-- [11]"Dropdowns", Getbootstrap.com, 2019. [Online]. Available: https://getbootstrap.com/docs/4.0/components/dropdowns/. [Accessed: 06- Apr- 2019] -->
                         <div class="dropdown show">
@@ -36,13 +30,13 @@
                               Dropdown link
                             </a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                              <a class="dropdown-item" href="#">Form 1</a>
+                              <a class="dropdown-item" href="real_estate/">Property Appraisal</a>
                               <a class="dropdown-item" href="#">Form 2</a>
                               <a class="dropdown-item" href="#">Form 3</a>
                             </div>
                         </div>
                     </div>    
-                    <button type="submit" class="btn login-button" value="/success" > <i class="fas fa-sign-in-alt"></i>Submit</button>
+                    <!-- <button type="submit" class="btn login-button" value="/success" > <i class="fas fa-sign-in-alt"></i>Submit</button> -->
                 </form>
             </div>
         </div>

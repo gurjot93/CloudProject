@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Success</title>
+	<link rel="stylesheet" href= "{% static 'bootstrap4/css/bootstrap.min.css' %}"></link>
+	<link src="{% static 'bootstrap4/js/bootstrap.min.js' %} "></link>
+	<link href=" {% static 'css/style.css' %}" rel="stylesheet"></link>
+</head>
+<body class="login-body">
+    <div class="modal-dialog text-center">
+        <div class="col-sm-8 main-section">
+            <div class="modal-content">
+                <div class="col-12 dalLogo">
+                    <img src="{% static 'img/mbr.jpg' %}" alt="Logo"width="230" height="150">
+                </div>
+                <h4 class="standouttext">
+                   <b>The Information Provided has been recieved successfully. You can now login and view the status of your application.
+                   <br>
+                   <br> 
+                   The Mortgage Application Number is:</b>
+                </h4>
+                <form class="col-12" action="/" method="POST">
+                    {% csrf_token %}
+					<div class="form-group">
+                         <!--Bootstrap Tooltips. (2019). Retrieved from https://getbootstrap.com/docs/4.1/components/tooltips/-->
+                         <input value= {{mbrUser.mortID}} id='mortID' type="mortID" class="form-control" placeholder="MortID"  required  data-toggle="tooltip" data-placement="bottom" title="Enter in valid data">
+                    </div>
+                    <!-- Bootstrap Cards. (2019). Retrieved from https://getbootstrap.com/docs/4.0/components/forms/-->
+ 
+                    <button type="submit" class="btn login-button" value="/success" > <i class="fas fa-sign-in-alt"></i>Home</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

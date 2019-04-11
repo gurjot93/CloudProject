@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('empweb/',include('empweb.urls')),
     path('reweb/',include('reweb.urls')),
+    path('',include('mbrweb.urls')),
 ]
