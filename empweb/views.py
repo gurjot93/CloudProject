@@ -39,7 +39,7 @@ def confirmation(request):
     mortID = request.POST.get('mortID','')
     print("This is the mortID: "+mortID)
     mbrUser = MbrDetails.objects.get(mortID=mortID)
-    MbrDetails.objects.filter(mortID=mortID).update(status="Information Received")
+    MbrDetails.objects.filter(mortID=mortID).update(status="Received")
     print(mbrUser.status)
     print("This is the MBRUser: " + mbrUser.address)
     print(request.POST)

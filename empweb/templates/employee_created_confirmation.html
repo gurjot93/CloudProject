@@ -18,7 +18,7 @@
                 <div class="col-12 dalLogo">
                     <img src="{% static 'img/buisnessman.png' %}" alt="Logo"width="150" height="150">
                 </div>
-                <form class="col-12"  method="POST">
+                <form class="col-12"  action="/empweb/" method="POST">
                     {% csrf_token %}
                     <h2 class="standouttext">
                             Employee created successfully
